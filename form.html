@@ -33,65 +33,65 @@
           </sedona-introdution>
           <h2>Оставьте свой отзыв</h2>
           <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          <form>
+          <form action="https://echo.htmlacademy.ru/" method="GET" name="form">
             <div class="form__person">
               <p>представьтесь</p>
-              <div class="label field-text form__contact-field">
+              <label class="field-text form__contact-field">
                 <p>Имя:</p>
-                <div class="input field-text__input" type="text" placeholder="Петр"></div>
-              </div>
-              <div class="label field-text form__contact-field">
+                <input class="field-text__input" type="text" placeholder="Петр" name="name">
+              </label>
+              <label class="field-text form__contact-field">
                 <p>Фамилия<sup>*</sup>:</p>
-                <div class="input field-text__input" type="text" placeholder="Иванов"></div>
-              </div>
+                <input class="field-text__input" type="text" placeholder="Иванов" name="surname">
+              </label>
               <label class="field-text form__contact-field">
                 <p>Отчество:</p>
-                <div class="input field-text__input" type="text" placeholder="Александрович"></div>
+                <input class="field-text__input" type="text" placeholder="Александрович" name="patronymic">
               </label>
             </div>
             <div class="form__contacts">
               <p>Контактная ифнормация</p>
-              <div class="label field-text form__contact-field">
+              <label class="field-text form__contact-field">
                 <p>Контактный телефон<sup>*</sup>:</p>
-                <div class="input field-text__input" type="text" placeholder="Введите телефон"></div><img src="#" alt="Field Image">
-              </div>
-              <div class="label field-text form__contact-field">
+                <input class="field-text__input" type="text" placeholder="Введите телефон" name="tel"><img src="#" alt="Field Image">
+              </label>
+              <label class="field-text form__contact-field">
                 <p>Электронная почта<sup>*</sup>:</p>
-                <div class="input field-text__input" type="text" placeholder="Введите e-mail"></div><img src="#" alt="Field Image">
-              </div>
+                <input class="field-text__input" type="text" placeholder="Введите e-mail" name="email"><img src="#" alt="Field Image">
+              </label>
             </div>
             <div class="form__impressions">
               <p>Ваши общие впечатления</p>
-              <div class="label field-radio">
-                <input type="radio" checked>
-              </div>
+              <label class="field-radio">
+                <input type="radio" name="good" value="good" checked>
+              </label>
               <p>Скорее положительное</p>
-              <div class="label field-radio">
-                <input type="radio">
-              </div>
+              <label class="field-radio">
+                <input type="radio" name="bad" value="bad">
+              </label>
               <p>Скорее отрицательное</p>
-              <div class="label field-radio">
-                <input type="radio">
-              </div>
+              <label class="field-radio">
+                <input type="radio" name="bad" value="neutral">
+              </label>
               <p>Скорее нейтральное</p>
             </div>
             <div class="form__atraction">
               <p>посещенные достопримечательности:</p>
-              <div class="label field-checkbox">
-                <input type="checkbox">
-              </div>
+              <label class="field-checkbox">
+                <input type="checkbox" name="Bridge" checked>
+              </label>
               <p>Мост дьявола</p>
-              <div class="label field-checkbox">
-                <input type="checkbox">
-              </div>
+              <label class="field-checkbox">
+                <input type="checkbox" name="Park" checked>
+              </label>
               <p>Слайд парк</p>
-              <div class="label field-checkbox">
-                <input type="checkbox">
-              </div>
+              <label class="field-checkbox">
+                <input type="checkbox" name="Mountain">
+              </label>
               <p>Гора колокол</p>
-              <div class="label field-checkbox">
-                <input type="checkbox">
-              </div>
+              <label class="field-checkbox">
+                <input type="checkbox" name="Cliffs" checked>
+              </label>
               <p>Красные скалы</p>
             </div>
             <div class="form__opinion">
@@ -99,6 +99,9 @@
               <div class="label field text form__contact-field form__contact-field--wide">
                 <textarea class="field-text__input" placeholder="Опишите подробно все свои восторги" name="message"></textarea>
               </div>
+            </div>
+            <div class="form__button">
+              <input class="form__confirm btn" type="submit" value="Отправить отзыв">
             </div>
           </form>
         </div>
