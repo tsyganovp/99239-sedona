@@ -1,0 +1,27 @@
+.main-nav
+{
+  .main-nav__toogler
+  {
+
+  }
+  .main-nav__list
+  {
+    text-decoration: none;
+    list-style: none;
+    li
+    {
+      padding-top: 6.56%;
+      padding-bottom: 5.62%;
+      text-align: center;
+      background: #84b5d2;
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 40px;
+      text-transform: uppercase;
+      box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      background-color: #81b3d2;
+    }
+  }
+}

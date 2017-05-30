@@ -1,0 +1,46 @@
+.page-footer
+{
+  .page-footer__inner
+  {
+    .hashtag
+    {
+      padding-top: 12.81%;
+      padding-bottom: 12.81%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    .page-footer__socio
+    {
+      list-style: none;
+      li
+      {
+        background: #84b5d2;
+        width: 47.18%;
+        text-align: center;
+        img
+        {
+          padding-top: 34.69%;
+          padding-bottom: 34.69%;
+        }
+      }
+    }
+  }
+  .footer__developers
+  {
+    .developers__text
+    {
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+}
