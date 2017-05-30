@@ -1,0 +1,35 @@
+.why-city
+{
+
+}
+.why-city__inner
+{
+  .city-promo
+  {
+    text-align: center;
+    background: #84b5d2;
+    padding-left: 10.3%;
+    padding-right: 10.3%;
+    color: #ffffff;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    .city-promo__header
+    {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    .city-promo__number
+    {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    .city-promo__descr
+    {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+}
