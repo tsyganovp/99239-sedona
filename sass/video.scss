@@ -1,0 +1,29 @@
+.video
+{
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  text-align: center;
+  .video__header
+  {
+    padding-top: 12.81%;
+    padding-bottom: 12.5%;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .video__text
+  {
+    padding-bottom: 12.5%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  /*Временное для видео*/
+  img
+  {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
