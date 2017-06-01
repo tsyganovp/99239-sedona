@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
-    <title>Axit</title>
+    <title>Sedona</title>
   </head>
   <body>
     <header>
       <section class="page-header">
         <div class="page-header__inner">
-          <div class="page-heder__logo"><img src="#" alt="Logo"></div>
-          <nav class="main-nav"><span class="main-nav__toogler"></span>
+          <div class="page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Logo"></div>
+          <nav class="main-nav"><span class="main-nav__toogler"><img src="img/icon-cross.svg" alt="Переключатель меню"></span>
             <ul class="main-nav__list">
               <li class="main‐nav__item">Главная</li>
               <li class="main‐nav__item">Фото и видео</li>
@@ -28,77 +28,70 @@
     <main>
       <section class="form">
         <div class="form__inner">
-          <sedona-introdution>
-            <h1>sedona</h1>
-          </sedona-introdution>
-          <h2>Оставьте свой отзыв</h2>
-          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="sedona-introdution"><img class="intro__sedona" src="img/text-sedona-index.svg"></div>
+          <h2 class="form__header">Оставьте свой отзыв</h2>
+          <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form action="https://echo.htmlacademy.ru/" method="GET" name="form">
             <div class="form__person">
               <p>представьтесь</p>
-              <label class="field-text form__contact-field">
-                <p>Имя:</p>
-                <input class="field-text__input" type="text" placeholder="Петр" name="name">
-              </label>
-              <label class="field-text form__contact-field">
-                <p>Фамилия<sup>*</sup>:</p>
-                <input class="field-text__input" type="text" placeholder="Иванов" name="surname">
-              </label>
-              <label class="field-text form__contact-field">
-                <p>Отчество:</p>
-                <input class="field-text__input" type="text" placeholder="Александрович" name="patronymic">
-              </label>
+              <p>Имя:</p>
+              <input class="field-text__input" type="text" placeholder="Петр" name="name" id="name">
+              <label class="field-text form__contact-field" for="name"></label>
+              <p>Фамилия<sup>*</sup>:</p>
+              <input class="field-text__input" type="text" placeholder="Иванов" name="surname">
+              <label class="field-text form__contact-field" for="surname"></label>
+              <p>Отчество:</p>
+              <input class="field-text__input" type="text" placeholder="Александрович" name="patronymic">
+              <label class="field-text form__contact-field" for="patronymic"></label>
             </div>
             <div class="form__contacts">
               <p>Контактная ифнормация</p>
-              <label class="field-text form__contact-field">
-                <p>Контактный телефон<sup>*</sup>:</p>
-                <input class="field-text__input" type="text" placeholder="Введите телефон" name="tel"><img src="#" alt="Field Image">
-              </label>
-              <label class="field-text form__contact-field">
-                <p>Электронная почта<sup>*</sup>:</p>
-                <input class="field-text__input" type="text" placeholder="Введите e-mail" name="email"><img src="#" alt="Field Image">
-              </label>
+              <p>Контактный телефон<sup>*</sup>:</p>
+              <input class="field-text__input" type="text" placeholder="Введите телефон" name="tel"><img src="#" alt="Field Image">
+              <label class="field-text form__contact-field" for="tel"></label>
+              <p>Электронная почта<sup>*</sup>:</p>
+              <input class="field-text__input" type="text" placeholder="Введите e-mail" name="email"><img src="#" alt="Field Image">
+              <label class="field-text form__contact-field" for="email"></label>
             </div>
             <div class="form__impressions">
-              <p>Ваши общие впечатления</p>
-              <label class="field-radio">
+              <p>Ваши общие впечатления
                 <input type="radio" name="good" value="good" checked>
-              </label>
-              <p>Скорее положительное</p>
-              <label class="field-radio">
+                <label class="field-radio" for="good"></label>
+              </p>
+              <p>Скорее положительное
                 <input type="radio" name="bad" value="bad">
-              </label>
-              <p>Скорее отрицательное</p>
-              <label class="field-radio">
+                <label class="field-radio" for="bad"></label>
+              </p>
+              <p>Скорее отрицательное
                 <input type="radio" name="bad" value="neutral">
-              </label>
+                <label class="field-radio" for="neutral"></label>
+              </p>
               <p>Скорее нейтральное</p>
             </div>
             <div class="form__atraction">
-              <p>посещенные достопримечательности:</p>
-              <label class="field-checkbox">
+              <p>посещенные достопримечательности:
                 <input type="checkbox" name="Bridge" checked>
-              </label>
-              <p>Мост дьявола</p>
-              <label class="field-checkbox">
+                <label class="field-checkbox" for="Bridge"></label>
+              </p>
+              <p>Мост дьявола
                 <input type="checkbox" name="Park" checked>
-              </label>
-              <p>Слайд парк</p>
-              <label class="field-checkbox">
+                <label class="field-checkbox" for="Park"></label>
+              </p>
+              <p>Слайд парк
                 <input type="checkbox" name="Mountain">
-              </label>
-              <p>Гора колокол</p>
-              <label class="field-checkbox">
+                <label class="field-checkbox" for="Mountain"></label>
+              </p>
+              <p>Гора колокол
                 <input type="checkbox" name="Cliffs" checked>
-              </label>
+                <label class="field-checkbox" for="Cliffs"></label>
+              </p>
               <p>Красные скалы</p>
             </div>
             <div class="form__opinion">
-              <p>Опишите свои восторги</p>
-              <div class="label field text form__contact-field form__contact-field--wide">
+              <p>Опишите свои восторги
                 <textarea class="field-text__input" placeholder="Опишите подробно все свои восторги" name="message"></textarea>
-              </div>
+                <label class="field text form__contact-field form__contact-field--wide" for="message"></label>
+              </p>
             </div>
             <div class="form__button">
               <input class="form__confirm btn" type="submit" value="Отправить отзыв">
@@ -108,17 +101,17 @@
       </section>
     </main>
     <footer>
-      <div class="page__footer">
+      <div class="page-footer">
         <div class="page-footer__inner">
           <h2 class="hashtag">#visitsedona</h2>
           <ul class="page-footer__socio">
-            <li class="item item_tw"><img src="#" alt="Socio"></li>
-            <li class="item item_fb"><img src="#" alt="Socio"></li>
-            <li class="item item_yt"><img src="#" alt="Socio"></li>
+            <li class="item item_icon-twitter"><img src="img/icon-twitter.svg" alt="Socio"></li>
+            <li class="item item_icon-facebook"><img src="img/icon-facebook.svg" alt="Socio"></li>
+            <li class="item item_icon-youtube"><img src="img/icon-youtube.svg" alt="Socio"></li>
           </ul>
-          <footer__developers>
-            <p class="developers__text">Разработано</p><img class="developers__img" src="#" alt="Developer Logo">
-          </footer__developers>
+          <div class="footer__developers">
+            <p class="developers__text">Разработано</p><img class="developers__img" src="img/logo-htmlacademy.svg" alt="Developer Logo">
+          </div>
         </div>
       </div>
     </footer>
