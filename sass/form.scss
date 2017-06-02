@@ -1,0 +1,168 @@
+.form
+{
+
+}
+.form__inner
+{
+  font-family: "PT Sans";
+  text-transform: uppercase;
+
+  .sedona-introdution
+  {
+    background: url('../img/bg-back-mobile@1x.jpg');
+    //background-size: 100% 100%;
+    text-align: center;
+    padding-top: 28.12%;
+    padding-bottom: 26.56%;
+    padding-left: 5.93%;
+    padding-right: 5.93%;
+  }
+
+  .intro__sedona
+  {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .form__header
+  {
+    text-align: center;
+    padding-top: 12.81%;
+    padding-bottom: 12.5%;
+    text-align: center;
+    padding-left: 6.87%;
+    padding-right: 6.87%;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .form__text
+  {
+    text-align: center;
+    padding-bottom: 6.87%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  .form__person
+  {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 7.81%;
+
+    h3
+    {
+      padding-top: 7.5%;
+      padding-bottom: 7.81%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+  .form__contacts
+  {
+    border-bottom: 1px solid #e5e5e5;
+
+    h3
+    {
+      padding-top: 7.5%;
+      padding-bottom: 9%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+  .form__impressions
+  {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8.73%;
+
+    h3
+    {
+      padding-top: 7.81%;
+      padding-bottom: 8.73%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    p
+    {
+      color: #000000;
+      text-transform: initial;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: right;
+    }
+    .field__radio
+    {
+      margin: 11%;
+    }
+  }
+  .form__atraction
+  {
+    //background: #e6e6e6;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 6.56%;
+
+    h3
+    {
+      padding-top: 6.56%;
+      padding-bottom: 6.56%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    .field__text
+    {
+      color: #000000;
+      text-transform: initial;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: right;
+    }
+    .field__checkbox
+    {
+      margin-top: 10%;
+
+    }
+  }
+  .form__opinions
+  {
+    margin-bottom: 15.93%;
+    padding-left: 6.51%;
+    padding-right: 6.51%;
+    h3
+    {
+      padding-top: 7.5%;
+      padding-bottom: 7.5%;
+      text-align: center;
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+}
