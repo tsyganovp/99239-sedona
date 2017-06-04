@@ -1,0 +1,49 @@
+.intro
+{
+
+}
+.intro__inner
+{
+  .intro__upper
+  {
+    background: url('../img/bg-back-mobile@1x.jpg');
+    //background-size: 100% 100%;
+    text-align: center;
+    padding-top: 28.12%;
+    padding-bottom: 26.56%;
+    padding-left: 5.93%;
+    padding-right: 5.93%;
+    .intro__sedona
+    {
+      width: 100%;
+    }
+
+    .intro__text-welcome
+    {
+
+    }
+  }
+  .intro__downer
+  {
+    padding-left: 10.3%;
+    padding-right: 10.3%;
+    font-family: "PT Sans";
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    .intro__text-sedona
+    {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .intro__text-reason
+    {
+        padding-top: 12.5%;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+  }
+}

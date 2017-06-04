@@ -1,0 +1,17 @@
+.map
+{
+
+}
+.map__inner
+{
+  position: relative;
+  width: 100%;
+  //background: url(../img/bg-map-mobile@1x.jpg);
+  .map__pointer
+  {
+    position: absolute;
+    top: 50.31%;
+    left: 45.62%;
+
+  }
+}

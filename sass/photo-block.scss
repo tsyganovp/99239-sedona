@@ -1,0 +1,47 @@
+.photos
+{
+
+}
+.photo-block
+{
+  padding-left: 6.56%;
+  padding-top: 6.56%;
+  padding-right: 6.56%;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 24px;
+  border-bottom: 1px solid #e5e5e5;
+  img
+  {
+    width: 100%;
+    padding-bottom: 6.56%;
+  }
+  .photo-block__descr
+  {
+    padding-bottom: 4.68%;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .photo-block__author
+  {
+    padding-bottom: 3.43%;
+    color: #333333;
+    font-weight: 400;
+    text-transform:initial;
+  }
+  .photo-block__likes
+  {
+    padding-bottom: 6.56%;
+    width: 7.18%;
+    p
+    {
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+}

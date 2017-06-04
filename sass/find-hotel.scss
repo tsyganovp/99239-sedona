@@ -1,0 +1,25 @@
+.hotel
+{
+  padding-bottom: 15.31%;
+  padding-left: 10.37%;
+  padding-right: 10.37%;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  text-align: center;
+  .hotel__header
+  {
+    padding-top: 10.31%;
+    padding-bottom: 9.37%;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .hotel__text
+  {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
