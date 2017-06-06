@@ -3,18 +3,17 @@
 }
 .media__inner
 {
-  padding-left: 7.81%;
-  padding-right: 7.81%;
   font-family: "PT Sans";
   text-transform: uppercase;
   .media__sedona
   {
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: 100% 100%;
-    padding-left: 14.06%;
-    padding-right: 14.06%;
-    padding-bottom: 20.93%;
-    padding-top: 16.25%;
+    padding-left: 45px;
+    padding-top: 52px;
+    padding-right: 46px;
+    padding-bottom: 67px;
+
     img
     {
       width: 100%;
@@ -24,8 +23,8 @@
 
   .media__header
   {
-    padding-top: 13.75%;
-    padding-bottom: 13.5%;
+    padding-top: 44px;
+    padding-bottom: 38px;
     text-align: center;
     color: #000000;
     font-size: 18px;
@@ -34,7 +33,9 @@
   }
   .media__text
   {
-    padding-bottom: 10.31%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 33px;
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
     color: #333333;

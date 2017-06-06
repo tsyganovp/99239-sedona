@@ -2,6 +2,12 @@
 {
   position: absolute;
   bottom: -111px;
+  &--photo
+  {
+    position: absolute;
+    bottom: 114px;
+    //left: 0;
+  }
 }
 .decoration-bottom
 {

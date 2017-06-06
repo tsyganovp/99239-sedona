@@ -1,12 +1,17 @@
 .video
 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   font-family: "PT Sans";
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 80px;
+
   .video__header
   {
-    padding-top: 12.81%;
-    padding-bottom: 12.5%;
+    padding-top: 39px;
+    padding-bottom: 37px;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
@@ -14,7 +19,9 @@
   }
   .video__text
   {
-    padding-bottom: 12.5%;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 40px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -26,4 +33,65 @@
     width: 100%;
     vertical-align: middle;
   }
+  .video-controls
+  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -67px;
+    left: 20px;
+
+    .video-controls__upper
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: 45px;
+      background: rgba(0,0,0,0.6);
+        input
+        {
+          width: 235px;
+        }
+    }
+    .video-controls__downer
+    {
+      display: flex;
+      justify-content: flex-start;
+      //width: 280px;
+      padding-left: 25px;
+      padding-top: 22px;
+      padding-bottom: 24px;
+
+      .downer__replay
+      {
+        padding-right: 120px;
+
+        img
+        {
+          width: 32px;
+          height: 20px;
+        }
+      }
+      .downer__subtitles
+      {
+        padding-right: 15px;
+
+        img
+        {
+          width: 32px;
+          height: 20px;
+        }
+      }
+      .downer__fullscreen
+      {
+        img
+        {
+          width: 32px;
+          height: 20px;
+        }
+      }
+    }
+  }
 }
+
