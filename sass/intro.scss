@@ -6,6 +6,7 @@
 {
   .intro__upper
   {
+    position: relative;
     background: url('../img/bg-back-mobile@1x.jpg');
     //background-size: 100% 100%;
     text-align: center;
@@ -18,11 +19,6 @@
       vertical-align: middle;
       width: 100%;
     }
-
-    .intro__text-welcome
-    {
-
-    }
   }
   .intro__downer
   {
@@ -33,6 +29,7 @@
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
+
     .intro__text-sedona
     {
       color: #000000;
@@ -41,7 +38,8 @@
     }
     .intro__text-reason
     {
-        padding-top: 12.5%;
+        padding-top: 40px;
+        padding-bottom: 50px;
         color: #333333;
         font-size: 14px;
         font-weight: 400;
