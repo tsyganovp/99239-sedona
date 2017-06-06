@@ -4,8 +4,12 @@
 }
 .page-header__inner
 {
+  position: relative;
+  background: #ffffff;
   .page-header__logo
   {
-
+    position: absolute;
+    top:0;
+    right: 109px;
   }
 }
