@@ -1,11 +1,17 @@
 .decoration-top
 {
   position: absolute;
-  bottom: -111px;
+  bottom: 177px;
   &--photo
   {
     position: absolute;
-    bottom: 114px;
+    top: 210px;
+    //left: 0;
+  }
+  &--form
+  {
+    position: absolute;
+    top: 205px;
     //left: 0;
   }
 }

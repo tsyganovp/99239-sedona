@@ -10,12 +10,12 @@
   .sedona-introdution
   {
     background: url('../img/bg-back-mobile@1x.jpg');
-    //background-size: 100% 100%;
+    background-size: 100% 100%;
     text-align: center;
-    padding-top: 28.12%;
-    padding-bottom: 26.56%;
-    padding-left: 5.93%;
-    padding-right: 5.93%;
+    padding-left: 45px;
+    padding-top: 52px;
+    padding-right: 46px;
+    padding-bottom: 67px;
   }
 
   .intro__sedona
@@ -26,11 +26,11 @@
   .form__header
   {
     text-align: center;
-    padding-top: 12.81%;
-    padding-bottom: 12.5%;
+    padding-top: 41px;
+    padding-bottom: 40px;
     text-align: center;
-    padding-left: 6.87%;
-    padding-right: 6.87%;
+    //padding-left: 6.87%;
+    //padding-right: 6.87%;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
@@ -39,7 +39,7 @@
   .form__text
   {
     text-align: center;
-    padding-bottom: 6.87%;
+    padding-bottom: 22px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -49,12 +49,12 @@
   .form__person
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 7.81%;
+    padding-bottom: 25px;
 
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 7.81%;
+      padding-top: 24px;
+      padding-bottom: 25px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -62,6 +62,11 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+    }
+    .field__person
+    {
+      display: flex;
+      align-items: center;
     }
   }
   .form__contacts
@@ -70,8 +75,8 @@
 
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 9%;
+      padding-top: 24px;
+      padding-bottom: 29px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -80,16 +85,21 @@
       line-height: 26px;
       text-transform: uppercase;
     }
+    p
+    {
+      margin-left: 42px;
+      margin-bottom: 7px;
+    }
   }
   .form__impressions
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 8.73%;
+    padding-bottom: 27px;
 
     h3
     {
-      padding-top: 7.81%;
-      padding-bottom: 8.73%;
+      padding-top: 24px;
+      padding-bottom: 27px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -110,19 +120,21 @@
     }
     .field__radio
     {
-      margin: 11%;
+      margin-left: 20px;
+      margin-right: 22px;
+      margin-bottom: 30px;
     }
   }
   .form__atraction
   {
     //background: #e6e6e6;
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 6.56%;
+    padding-bottom: 25px;
 
     h3
     {
-      padding-top: 6.56%;
-      padding-bottom: 6.56%;
+      padding-top: 24px;
+      padding-bottom: 21px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -139,23 +151,27 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
-      text-align: right;
+      text-align: center;
     }
     .field__checkbox
     {
-      margin-top: 10%;
-
+      margin-left: 24px;
+      margin-top: 64px;
+      padding-bottom: 25px;
     }
   }
   .form__opinions
   {
-    margin-bottom: 15.93%;
-    padding-left: 6.51%;
-    padding-right: 6.51%;
+    width: 260px;
+    margin-bottom: 51px;
+    margin-right: 20px;
+    //margin-left: 20px;
+    padding-left: 19px;
+    padding-right: 22px;
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 7.5%;
+      padding-top: 24px;
+      padding-bottom: 21px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
