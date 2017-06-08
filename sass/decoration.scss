@@ -19,6 +19,17 @@
     position: absolute;
     top: 210px;
     //left: 0;
+    img
+    {
+      width: 100%;
+    }
+    @media screen and ($tablet-widths)
+    {
+      height: 57px;
+      width: 768px;
+      position: absolute;
+      top: 298px;
+    }
   }
   &--form
   {

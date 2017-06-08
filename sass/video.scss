@@ -8,6 +8,11 @@
   text-align: center;
   margin-bottom: 80px;
 
+  @media screen and ($tablet-widths)
+  {
+
+  }
+
   .video__header
   {
     padding-top: 39px;
@@ -16,6 +21,16 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 68px;
+      padding-bottom: 40px;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
   .video__text
   {
@@ -26,71 +41,25 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-left: 176px;
+      padding-right: 177px;
+      padding-bottom: 78px;
+    }
   }
   /*Временное для видео*/
-  img
+  .video-screen
   {
     width: 100%;
     vertical-align: middle;
-  }
-  .video-controls
-  {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: -67px;
-    left: 20px;
 
-    .video-controls__upper
+    @media screen and ($tablet-widths)
     {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 280px;
-      height: 45px;
-      background: rgba(0,0,0,0.6);
-        input
-        {
-          width: 235px;
-        }
-    }
-    .video-controls__downer
-    {
-      display: flex;
-      justify-content: flex-start;
-      //width: 280px;
-      padding-left: 25px;
-      padding-top: 22px;
-      padding-bottom: 24px;
-
-      .downer__replay
-      {
-        padding-right: 120px;
-
-        img
-        {
-          width: 32px;
-          height: 20px;
-        }
-      }
-      .downer__subtitles
-      {
-        padding-right: 15px;
-
-        img
-        {
-          width: 32px;
-          height: 20px;
-        }
-      }
-      .downer__fullscreen
-      {
-        img
-        {
-          width: 32px;
-          height: 20px;
-        }
-      }
+      width: 648px;
+      margin-right: 60px;
+      margin-left: 60px;
     }
   }
 }

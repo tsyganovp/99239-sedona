@@ -14,6 +14,14 @@
     padding-right: 46px;
     padding-bottom: 67px;
 
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 95px;
+      padding-bottom: 117px;
+      padding-left: 156px;
+      padding-right: 156px;
+    }
+
     img
     {
       width: 100%;
@@ -30,6 +38,16 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 76px;
+      padding-bottom: 40px;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
   .media__text
   {
@@ -42,5 +60,17 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-left: 170px;
+      padding-right: 170px;
+      padding-bottom: 75px;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      border-bottom: none;
+    }
   }
 }
