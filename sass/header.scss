@@ -12,5 +12,12 @@
     position: absolute;
     top:0;
     right: 109px;
+
+    @media screen and ($tablet-widths)
+    {
+      position: absolute;
+      top: 0;
+      right: 333px;
+    }
   }
 }

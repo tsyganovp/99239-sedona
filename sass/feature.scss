@@ -1,3 +1,4 @@
+
 .feature
 {
   padding-bottom: 39px;
@@ -7,11 +8,34 @@
   {
     padding-bottom: 0;
   }
+  &:nth-child(2)
+  {
+    @media screen and ($tablet-widths)
+    {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and ($tablet-widths)
+  {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
   .feature__img
   {
     padding-right: 7px;
     width: 40px;
     vertical-align: middle;
+
+    @media screen and ($tablet-widths)
+    {
+      padding: 0;
+      margin: 0 auto;
+    }
     img
     {
       width: inherit;
@@ -23,6 +47,13 @@
     display: flex;
     flex-direction: column;
     width: 210px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-left:0;
+      text-align: center;
+    }
+
     .feature__header
     {
       padding-bottom: 25px;
@@ -32,6 +63,12 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-top: 33px;
+        text-align: center;
+      }
     }
     .feature__parargaph
     {

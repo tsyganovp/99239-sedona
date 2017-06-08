@@ -7,11 +7,16 @@
   position: relative;
   width: 320px;
   //background: url(../img/bg-map-mobile@1x.jpg);
+
+  @media screen and ($tablet-widths)
+  {
+    width: 768px;
+  }
   .map__pointer
   {
     position: absolute;
-    top: 161px;
-    left: 146px;
+    top: 164px;
+    left: 370px;
 
   }
 }

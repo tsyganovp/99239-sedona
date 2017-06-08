@@ -12,15 +12,41 @@
     color: #ffffff;
     font-family: "PT Sans";
     text-transform: uppercase;
+
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+    }
+  .city-promo__text
+  {
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+      flex-direction: column;
+      padding: 47px;
+      padding-top: 46px;
+      padding-bottom: 49px;
+    }
+    &:nth-child(1)
+    {
+      order: 2;
+    }
+
     .city-promo__header
     {
       padding-left: 28px;
       padding-top: 43px;
       padding-right: 27px;
-
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-left: 0;
+        padding-right: 0;
+
+      }
     }
     .city-promo__number
     {
@@ -31,6 +57,13 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-left: 0;
+        padding-right: 0;
+
+      }
     }
     .city-promo__descr
     {
@@ -40,10 +73,30 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-left: 0;
+        padding-right: 0;
+
+      }
     }
-    .city-promo__img
+  }
+    .city-promo__image
     {
       vertical-align: middle;
+      img
+      {
+        vertical-align: middle;
+        @media screen and ($tablet-widths)
+        {
+          width: 512px;
+        }
+      }
+      @media screen and ($tablet-widths)
+      {
+        //width: 512px;
+      }
     }
   }
   .city-promo--inverted
@@ -57,12 +110,39 @@
     text-align: center;
     font-family: "PT Sans";
     text-transform: uppercase;
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .city-promo__gray
+  {
+    @media screen and ($tablet-widths)
+    {
+      //text-align: center;
+      //width: 256px;
+      padding-left: 56px;
+      padding-top: 50px;
+      padding-right: 48px;
+      padding-bottom: 49px;
+    }
     .city-promo__header
     {
       color: #000000;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
+
+      @media screen and ($tablet-widths)
+      {
+        color: #000000;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+      }
     }
     .city-promo__number
     {
@@ -72,6 +152,14 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
     }
     .city-promo__descr
     {
@@ -93,4 +181,14 @@
   flex-direction: column;
   font-family: "PT Sans";
   text-transform: uppercase;
+
+  @media screen and ($tablet-widths)
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 63px;
+    margin-bottom: 66px;
+  }
 }

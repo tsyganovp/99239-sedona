@@ -1,6 +1,12 @@
 body
 {
-  width: 320px;
+  //width: 320px;
+  width:768px;
+
+  @media screen and ($tablet-widths)
+  {
+   // width: 768px;
+  }
 }
 h1,h2,h3,p,li
 {

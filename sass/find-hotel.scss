@@ -7,6 +7,15 @@
   font-family: "PT Sans";
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and ($tablet-widths)
+  {
+    padding-left: 155px;
+    padding-top: 57px;
+    padding-right: 155px;
+    padding-bottom: 58px;
+  }
+
   .hotel__header
   {
     padding-bottom: 40px;
@@ -14,6 +23,14 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
   .hotel__text
   {
@@ -21,5 +38,13 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
   }
 }

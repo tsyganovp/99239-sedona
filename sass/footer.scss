@@ -2,6 +2,12 @@
 {
   .page-footer__inner
   {
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+      //align-items: center;
+    }
+
     .hashtag
     {
       padding-top: 31px;
@@ -13,14 +19,28 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-left: 60px;
+        padding-right: 112px;
+        padding-top: 51px;
+        padding-bottom: 53px;
+      }
     }
     .page-footer__socio
     {
       list-style: none;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
       padding: 0;
       margin-bottom: 51px;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-top: 36px;
+      }
       li
       {
         background: #84b5d2;
@@ -30,6 +50,8 @@
         margin-right: 3px;
         img
         {
+          width: 18px;
+          height: 14px;
           vertical-align: middle;
           padding-top: 17px;
           padding-bottom: 17px;
@@ -41,6 +63,11 @@
   {
     display: flex;
     justify-content: center;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-left: 133px;
+    }
     .developers__text
     {
       align-self: center;

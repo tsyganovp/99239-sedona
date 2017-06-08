@@ -14,6 +14,16 @@
     padding-bottom: 85px;
     padding-left: 19px;
     padding-right: 19px;
+
+    @media screen and ($tablet-widths)
+    {
+      background-size: 100% 100%;
+      padding-top: 77px;
+      padding-bottom: 91px;
+      padding-left: 154px;
+      padding-right: 154px;
+    }
+
     .intro__sedona
     {
       vertical-align: middle;
@@ -30,20 +40,46 @@
     text-transform: uppercase;
     text-align: center;
 
+    @media screen and ($tablet-widths)
+    {
+      //width: 486px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      padding-top: 51px;
+      //padding-bottom: 55px;
+      padding-right: 141px;
+      padding-left: 141px;
+      text-align: center;
+    }
+
     .intro__text-sedona
     {
       color: #000000;
       font-size: 18px;
       font-weight: 700;
+
+      @media screen and ($tablet-widths)
+      {
+        font-size: 21px;
+        font-weight: 700;
+      }
     }
     .intro__text-reason
     {
-        padding-top: 40px;
-        padding-bottom: 50px;
-        color: #333333;
+      padding-top: 40px;
+      padding-bottom: 55px;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+
+      @media screen and ($tablet-widths)
+      {
         font-size: 14px;
         font-weight: 400;
-
+      }
     }
   }
 }

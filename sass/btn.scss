@@ -15,4 +15,12 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media screen and ($tablet-widths)
+  {
+    margin-top: 47px;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    width: 458px;
+  }
 }
