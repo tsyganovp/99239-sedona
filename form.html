@@ -16,7 +16,7 @@
           <div class="page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Logo"></div>
           <nav class="main-nav"><span class="main-nav__toogler">
               <!--img(src="img/icon-cross.svg" alt="Переключатель меню")--></span>
-            <ul class="main-nav__list--opened main-nav__list--closed">
+            <ul class="main-nav main-nav__list--opened">
               <li class="main‐nav__item">Главная</li>
               <li class="main‐nav__item">Фото и видео</li>
               <li class="main‐nav__item">Форма отзыва</li>
@@ -55,8 +55,8 @@
             </div>
             <div class="form__contacts">
               <h3>Контактная информация:</h3>
-              <p>Контактный телефон<sup>*</sup>:</p>
               <div class="field field__contacts">
+                <p>Контактный телефон<sup>*</sup>:</p>
                 <input class="field-text__input" type="text" placeholder="Введите телефон" name="tel">
                 <label class="field-text form__contact-field label__tel" for="tel"><img src="img/icon-phone.svg" alt="Field Image"></label>
               </div>
@@ -108,7 +108,7 @@
               </div>
             </div>
             <div class="form__opinions">
-              <h3>Опишите свои восторги:</h3>
+              <h3>Опишите свои эмоции:</h3>
               <div class="field field__opinion">
                 <textarea class="field-textarea" placeholder="Опишите подробно все свои восторги" name="message" cols="10"></textarea>
                 <label class="field text form__contact-field form__contact-field--wide" for="message"></label>
@@ -116,6 +116,7 @@
             </div>
             <div class="form__button">
               <input class="form__confirm btn" type="submit" value="Отправить отзыв">
+              <p class="form__attention">* — обязательные поля</p>
             </div>
           </form>
         </div>

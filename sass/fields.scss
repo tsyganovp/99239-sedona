@@ -94,6 +94,11 @@ textarea:-ms-input-placeholder
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-right: 432px;
+    }
   }
   input::-webkit-input-placeholder
   {
@@ -276,4 +281,10 @@ height: 17px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
+  @media screen and ($tablet-widths)
+  {
+    width: 627px;
+  }
 }
+

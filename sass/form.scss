@@ -1,6 +1,14 @@
-.form
+form
 {
-
+  @media screen and ($tablet-widths)
+  {
+    margin: 0;
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    //width: 648px;
+  }
 }
 .form__inner
 {
@@ -16,6 +24,14 @@
     padding-top: 52px;
     padding-right: 46px;
     padding-bottom: 67px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 95px;
+      padding-bottom: 117px;
+      padding-left: 156px;
+      padding-right: 156px;
+    }
   }
 
   .intro__sedona
@@ -35,6 +51,16 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 71px;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
   }
   .form__text
   {
@@ -45,11 +71,25 @@
     font-weight: 400;
     line-height: 24px;
     border-bottom:1px solid #e5e5e5;
+
+    @media screen and ($tablet-widths)
+    {
+      //padding-left: 164px;
+      //padding-right: 165px;
+      border: none;
+    }
   }
   .form__person
   {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 25px;
+
+    @media screen and ($tablet-widths)
+    {
+      border: none;
+      order: 2;
+      //width: 383px;
+    }
 
     h3
     {
@@ -62,6 +102,12 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-bottom: 85px;
+      }
+
     }
     .field__person
     {
@@ -72,6 +118,16 @@
   .form__contacts
   {
     border-bottom: 1px solid #e5e5e5;
+
+    @media screen and ($tablet-widths)
+    {
+      position: relative;
+      margin-top: 75px;
+      order: 3;
+      width: 800px;
+      border: none;
+
+    }
 
     h3
     {
@@ -84,6 +140,33 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin: 0 auto;
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 35px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 35px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
     }
     p
     {
@@ -96,6 +179,14 @@
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 27px;
 
+    @media screen and ($tablet-widths)
+    {
+      width: 324px;
+      border-bottom:none;
+      border-right: 1px solid #ededed;
+      order: 1;
+    }
+
     h3
     {
       padding-top: 24px;
@@ -107,6 +198,11 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-bottom: 79px;
+      }
     }
     p
     {
@@ -131,6 +227,17 @@
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 25px;
 
+    @media screen and ($tablet-widths)
+    {
+      order: 4;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      padding-bottom: 0;
+      border:none;
+    }
+
     h3
     {
       padding-top: 24px;
@@ -142,6 +249,38 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        width: 648px;
+        margin: 0 auto;
+        padding-bottom: 65px;
+        padding-top: 58px;
+
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 67px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 67px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
+
     }
     .field__text
     {
@@ -158,16 +297,32 @@
       margin-left: 24px;
       margin-top: 64px;
       padding-bottom: 25px;
+
+      @media screen and ($tablet-widths)
+      {
+        width: 320px;
+        margin-bottom: 32px;
+        //margin: 0;
+        padding: 0;
+      }
     }
   }
   .form__opinions
   {
-    width: 260px;
     margin-bottom: 51px;
     margin-right: 20px;
     //margin-left: 20px;
     padding-left: 19px;
     padding-right: 22px;
+
+    @media screen and ($tablet-widths)
+    {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      order: 5;
+    }
+
     h3
     {
       padding-top: 24px;
@@ -179,6 +334,65 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-top: 73px;
+        margin-bottom: 60px;
+        padding: 0;
+
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 83px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 83px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
+    }
+  }
+  .form__button
+  {
+    @media screen and ($tablet-widths)
+    {
+      //margin-right: 155px;
+      margin-bottom: 61px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      order: 6;
+      margin-top: 58px;
+    }
+    .form__attention
+    {
+      display: none;
+      @media screen and ($tablet-widths)
+      {
+        margin-left: 162px;
+        display: block;
+        align-self: center;
+        color: #333333;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+      }
     }
   }
 }
