@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -67px;
+    bottom: -71px;
     left: 20px;
 
     @media screen and ($tablet-widths)
@@ -12,12 +12,16 @@
       left: 60px;
     }
 
+    @media screen and ($tablet-widths)
+    {
+      left: 200px;
+    }
+
     .video-controls__upper
     {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 648px;
       height: 45px;
       background: rgba(0,0,0,0.6);
 
@@ -27,7 +31,7 @@
       }
       input
       {
-        width: 235px;
+        width: 280px;
 
         @media screen and ($tablet-widths)
         {
@@ -35,6 +39,11 @@
           position: absolute;
           top: 35px;
           right: 165px;
+        }
+
+        @media screen and ($tablet-widths)
+        {
+          width: 540px;
         }
       }
     }
@@ -49,9 +58,15 @@
 
       @media screen and ($tablet-widths)
       {
+        width: 648px;
         padding: 0;
         height: 93px;
         background: rgba(0,0,0,0.6);
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        width: 800px;
       }
 
       .downer__replay
@@ -79,6 +94,11 @@
           padding: 0;
           padding-top: 35px;
           padding-left: 473px;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          padding-left: 624px;
         }
 
         img

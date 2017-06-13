@@ -9,6 +9,7 @@
   background: #ffffff;
   .page-header__logo
   {
+    z-index: 100;
     position: absolute;
     top:0;
     right: 109px;
@@ -18,6 +19,11 @@
       position: absolute;
       top: 0;
       right: 333px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      right:547px;
     }
   }
 }

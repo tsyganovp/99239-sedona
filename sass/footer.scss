@@ -27,6 +27,14 @@
         padding-top: 51px;
         padding-bottom: 53px;
       }
+
+      @media screen and ($desktop-widths)
+      {
+        padding-top: 51px;
+        padding-bottom: 53px;
+        padding-left: 132px;
+        padding-right: 256px;
+      }
     }
     .page-footer__socio
     {
@@ -68,6 +76,12 @@
     {
       padding-left: 133px;
     }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 349px;
+    }
+
     .developers__text
     {
       align-self: center;

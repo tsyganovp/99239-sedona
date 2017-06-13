@@ -17,6 +17,10 @@
     {
       display: flex;
     }
+    @media screen and ($desktop-widths)
+    {
+      display: flex;
+    }
   .city-promo__text
   {
     @media screen and ($tablet-widths)
@@ -27,10 +31,17 @@
       padding-top: 46px;
       padding-bottom: 49px;
     }
-    &:nth-child(1)
+
+    @media screen and ($desktop-widths)
     {
-      order: 2;
+      padding: 67px;
+      padding-top: 53px;
+      padding-bottom: 63px;
     }
+    //&:nth-child(1)
+    //{
+     // order: 2;
+    //}
 
     .city-promo__header
     {
@@ -45,7 +56,11 @@
       {
         padding-left: 0;
         padding-right: 0;
+      }
 
+      @media screen and ($desktop-widths)
+      {
+        padding: 0;
       }
     }
     .city-promo__number
@@ -78,7 +93,11 @@
       {
         padding-left: 0;
         padding-right: 0;
+      }
 
+      @media screen and ($desktop-widths)
+      {
+        padding: 0;
       }
     }
   }
@@ -88,14 +107,36 @@
       img
       {
         vertical-align: middle;
+
         @media screen and ($tablet-widths)
         {
           width: 512px;
         }
+
+        @media screen and ($desktop-widths)
+        {
+          width: 800px;
+          height: 256px;
+          vertical-align: middle;
+          order: 2;
+        }
+        &:nth-child(2)
+        {
+          @media screen and ($desktop-widths)
+          {
+            order:1
+          }
+        }
       }
+
       @media screen and ($tablet-widths)
       {
         //width: 512px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        order: 2;
       }
     }
   }
@@ -128,6 +169,14 @@
       padding-top: 50px;
       padding-right: 48px;
       padding-bottom: 49px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 63px;
+      padding-top: 63px;
+      padding-right: 48px;
+      padding-bottom: 70px;
     }
     .city-promo__header
     {
@@ -190,5 +239,34 @@
     align-items: flex-start;
     margin-top: 63px;
     margin-bottom: 66px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+}
+
+.city-promo__text2
+{
+  @media screen and ($tablet-widths)
+  {
+    order:4;
+  }
+  @media screen and ($desktop-widths)
+  {
+    order: 3;
+  }
+}
+.city-promo__image2
+{
+  @media screen and ($tablet-widths)
+  {
+    order: 3;
+  }
+  @media screen and ($desktop-widths)
+  {
+    order: 2;
   }
 }

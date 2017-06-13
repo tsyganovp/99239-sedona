@@ -22,6 +22,14 @@
       padding-right: 156px;
     }
 
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 101px;
+      padding-bottom: 120px;
+      padding-left: 370px;
+      padding-right: 370px;
+    }
+
     img
     {
       width: 100%;
@@ -48,6 +56,12 @@
       font-weight: 700;
       line-height: 26px;
     }
+
+    @media screen and ($desktop-widths)
+    {
+       padding-top: 113px;
+       padding-bottom: 40px;
+    }
   }
   .media__text
   {
@@ -71,6 +85,13 @@
       font-weight: 400;
       line-height: 24px;
       border-bottom: none;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 386px;
+      padding-right: 386px;
+      padding-bottom: 77px;
     }
   }
 }

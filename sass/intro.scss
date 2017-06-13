@@ -24,6 +24,15 @@
       padding-right: 154px;
     }
 
+    @media screen and ($desktop-widths)
+    {
+      background-size: 100% 100%;
+      padding-top: 78px;
+      padding-bottom: 90px;
+      padding-left: 370px;
+      padding-right: 370px;
+    }
+
     .intro__sedona
     {
       vertical-align: middle;
@@ -55,6 +64,14 @@
       text-align: center;
     }
 
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 51px;
+      padding-bottom: 55px;
+      padding-right: 357px;
+      padding-left: 357px;
+    }
+
     .intro__text-sedona
     {
       color: #000000;
@@ -65,6 +82,11 @@
       {
         font-size: 21px;
         font-weight: 700;
+      }
+      @media screen and ($desktop-widths)
+      {
+        //padding-top: 51px;
+        padding-bottom: 55px;
       }
     }
     .intro__text-reason
@@ -79,6 +101,12 @@
       {
         font-size: 14px;
         font-weight: 400;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
   }

@@ -15,6 +15,13 @@
     padding-right: 155px;
     padding-bottom: 58px;
   }
+  @media screen and ($desktop-widths)
+  {
+    padding-top: 57px;
+    padding-bottom: 66px;
+    padding-left: 383px;
+    padding-right: 383px;
+  }
 
   .hotel__header
   {
@@ -45,6 +52,11 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-bottom: 52px;
     }
   }
 }

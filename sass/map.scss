@@ -12,11 +12,15 @@
   {
     width: 768px;
   }
+
+  @media screen and ($tablet-widths)
+  {
+    width: 1200px;
+  }
   .map__pointer
   {
     position: absolute;
     top: 164px;
-    left: 370px;
-
+    left: 586px;
   }
 }
