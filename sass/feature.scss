@@ -1,13 +1,14 @@
-
 .feature
 {
   padding-bottom: 39px;
   display: flex;
   justify-content: center;
+
   &:nth-child(3)
   {
     padding-bottom: 0;
   }
+
   &:nth-child(2)
   {
     @media screen and ($tablet-widths)
@@ -21,7 +22,6 @@
       margin-left: 134px;
       margin-right: 134px;
     }
-
   }
 
   @media screen and ($tablet-widths)
@@ -43,11 +43,13 @@
       padding: 0;
       margin: 0 auto;
     }
+
     img
     {
       width: inherit;
     }
   }
+
   .feature__text
   {
     padding-left: 6px;
@@ -77,6 +79,7 @@
         text-align: center;
       }
     }
+
     .feature__parargaph
     {
       text-align: center;

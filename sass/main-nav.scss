@@ -7,16 +7,14 @@
     top: 0;
     right: 0;
     z-index: 2;
-
     display: block;
     width: 70px;
     height: 50px;
-
     font-size: 0;
-
     background-color: white;
     cursor: pointer;
     border: none;
+
     &:before
     {
       content: "";
@@ -27,7 +25,7 @@
       height: 4px;
       background-color: #84b5d2;
       box-shadow: 0 8px 0 0 #84b5d2,
-                  0 16px 0 0 #84b5d2;
+      0 16px 0 0 #84b5d2;
     }
 
     @media screen and ($tablet-widths)
@@ -41,6 +39,7 @@
     text-decoration: none;
     list-style: none;
     //display:none;
+
     @media screen and ($tablet-widths)
     {
       display: flex;
@@ -66,23 +65,24 @@
       box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
       background-color: #81b3d2;
 
-      @media screen and ($tablet-widths)
-      {
-        flex-grow: 1;
-        width: 153px;
-        background: white;
-        color:black;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 26px;
-        text-transform: uppercase;
-        box-shadow: none;
-        //margin-right: 77px;
-        text-align: center;
-        &:nth-child(2)
+        @media screen and ($tablet-widths)
         {
-          margin-right: 209px;
-        }
+          flex-grow: 1;
+          width: 153px;
+          background: white;
+          color:black;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 26px;
+          text-transform: uppercase;
+          box-shadow: none;
+          //margin-right: 77px;
+          text-align: center;
+
+          &:nth-child(2)
+          {
+            margin-right: 209px;
+          }
       }
     }
   }

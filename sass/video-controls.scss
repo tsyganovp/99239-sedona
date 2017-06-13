@@ -12,7 +12,7 @@
       left: 60px;
     }
 
-    @media screen and ($tablet-widths)
+    @media screen and ($desktop-widths)
     {
       left: 200px;
     }
@@ -41,7 +41,7 @@
           right: 165px;
         }
 
-        @media screen and ($tablet-widths)
+        @media screen and ($desktop-widths)
         {
           width: 540px;
         }

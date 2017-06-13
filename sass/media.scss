@@ -5,6 +5,7 @@
 {
   font-family: "PT Sans";
   text-transform: uppercase;
+
   .media__sedona
   {
     background: url('../img/bg-back-mobile@1x.jpg');
@@ -59,10 +60,11 @@
 
     @media screen and ($desktop-widths)
     {
-       padding-top: 113px;
-       padding-bottom: 40px;
+      padding-top: 113px;
+      padding-bottom: 40px;
     }
   }
+
   .media__text
   {
     padding-left: 24px;
@@ -77,8 +79,8 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-left: 170px;
-      padding-right: 170px;
+      //padding-left: 170px;
+      //padding-right: 170px;
       padding-bottom: 75px;
       color: #333333;
       font-size: 14px;
@@ -89,8 +91,8 @@
 
     @media screen and ($desktop-widths)
     {
-      padding-left: 386px;
-      padding-right: 386px;
+      //padding-left: 386px;
+      //padding-right: 386px;
       padding-bottom: 77px;
     }
   }

@@ -21,6 +21,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
 
     @media screen and ($tablet-widths)
     {
@@ -34,14 +35,16 @@
 
     @media screen and ($tablet-widths)
     {
-      margin-left: 393px;
-      margin-right: 393px;
+      //margin-left: 393px;
+      //margin-right: 393px;
     }
   }
+
   .video__text
   {
-    padding-left: 42px;
-    padding-right: 42px;
+    //padding-left: 42px;
+    //padding-right: 42px;
+    text-align: center;
     padding-bottom: 40px;
     color: #333333;
     font-size: 14px;
@@ -50,19 +53,19 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-left: 176px;
-      padding-right: 177px;
+      //padding-left: 176px;
+      //padding-right: 177px;
       padding-bottom: 78px;
     }
 
     @media screen and ($desktop-widths)
     {
-      margin-left: 393px;
-      margin-right: 393px;
+      //margin-left: 393px;
+      //margin-right: 393px;
       padding: 0;
     }
   }
-  /*Временное для видео*/
+/*Временное для видео*/
   .video-screen
   {
     width: 100%;

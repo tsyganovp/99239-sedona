@@ -10,19 +10,23 @@
     bottom: -232px;
     left: 30px;
   }
+
   img
   {
     width: 100%;
   }
+
   &--photo
   {
     position: absolute;
     top: 210px;
     //left: 0;
+
     img
     {
       width: 100%;
     }
+
     @media screen and ($tablet-widths)
     {
       height: 57px;
@@ -31,6 +35,7 @@
       top: 298px;
     }
   }
+
   &--form
   {
     position: absolute;
@@ -42,6 +47,7 @@
 {
   position: absolute;
   top: -26px;
+
   @media screen and ($tablet-widths)
   {
     display: none;

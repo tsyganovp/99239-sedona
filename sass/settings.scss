@@ -1,12 +1,14 @@
 body
 {
-  //width: 320px;
- // width:768px;
+  width: 320px;
+  width:768px;
   margin: 0 auto;
+
   @media screen and ($tablet-widths)
   {
-   //width: 768px;
+    //width: 768px;
   }
+
   @media screen and ($desktop-widths)
   {
     width: 1200px;

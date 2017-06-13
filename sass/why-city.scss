@@ -5,6 +5,7 @@
 .why-city__inner
 {
   position: relative;
+
   .city-promo
   {
     text-align: center;
@@ -17,93 +18,95 @@
     {
       display: flex;
     }
+
     @media screen and ($desktop-widths)
     {
       display: flex;
     }
-  .city-promo__text
-  {
-    @media screen and ($tablet-widths)
-    {
-      display: flex;
-      flex-direction: column;
-      padding: 47px;
-      padding-top: 46px;
-      padding-bottom: 49px;
-    }
 
-    @media screen and ($desktop-widths)
+    .city-promo__text
     {
-      padding: 67px;
-      padding-top: 53px;
-      padding-bottom: 63px;
-    }
-    //&:nth-child(1)
-    //{
-     // order: 2;
-    //}
-
-    .city-promo__header
-    {
-      padding-left: 28px;
-      padding-top: 43px;
-      padding-right: 27px;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 26px;
 
       @media screen and ($tablet-widths)
       {
-        padding-left: 0;
-        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 47px;
+        padding-top: 46px;
+        padding-bottom: 49px;
       }
 
       @media screen and ($desktop-widths)
       {
-        padding: 0;
+        padding: 67px;
+        padding-top: 53px;
+        padding-bottom: 63px;
+      }
+
+      .city-promo__header
+      {
+        padding-left: 28px;
+        padding-top: 43px;
+        padding-right: 27px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+        }
+      }
+
+      .city-promo__number
+      {
+        padding-right: 27px;
+        padding-top: 20px;
+        padding-right: 28px;
+        padding-bottom: 25px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .city-promo__descr
+      {
+        padding-left: 27px;
+        padding-right: 28px;
+        padding-bottom: 45px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+        }
       }
     }
-    .city-promo__number
-    {
-      padding-right: 27px;
-      padding-top: 20px;
-      padding-right: 28px;
-      padding-bottom: 25px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
 
-      @media screen and ($tablet-widths)
-      {
-        padding-left: 0;
-        padding-right: 0;
-
-      }
-    }
-    .city-promo__descr
-    {
-      padding-left: 27px;
-      padding-right: 28px;
-      padding-bottom: 45px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-
-      @media screen and ($tablet-widths)
-      {
-        padding-left: 0;
-        padding-right: 0;
-      }
-
-      @media screen and ($desktop-widths)
-      {
-        padding: 0;
-      }
-    }
-  }
     .city-promo__image
     {
       vertical-align: middle;
+
       img
       {
         vertical-align: middle;
@@ -120,8 +123,10 @@
           vertical-align: middle;
           order: 2;
         }
+
         &:nth-child(2)
         {
+
           @media screen and ($desktop-widths)
           {
             order:1
@@ -140,6 +145,7 @@
       }
     }
   }
+
   .city-promo--inverted
   {
     text-align: center;
@@ -151,6 +157,7 @@
     text-align: center;
     font-family: "PT Sans";
     text-transform: uppercase;
+
     @media screen and ($tablet-widths)
     {
       display: flex;
@@ -159,8 +166,10 @@
       padding-right: 0;
     }
   }
+
   .city-promo__gray
   {
+
     @media screen and ($tablet-widths)
     {
       //text-align: center;
@@ -178,6 +187,7 @@
       padding-right: 48px;
       padding-bottom: 70px;
     }
+
     .city-promo__header
     {
       color: #000000;
@@ -193,6 +203,7 @@
         line-height: 26px;
       }
     }
+
     .city-promo__number
     {
       padding-top: 6.25%;
@@ -210,10 +221,12 @@
         line-height: 21px;
       }
     }
+
     .city-promo__descr
     {
       border-bottom: 1px solid #d7d7d7;
       padding-bottom: 32px;
+
       &:last-of-type
       {
         border: 0;
@@ -221,6 +234,7 @@
     }
   }
 }
+
 .why-city__features
 {
   margin-top: 41px;
@@ -250,10 +264,12 @@
 
 .city-promo__text2
 {
+
   @media screen and ($tablet-widths)
   {
     order:4;
   }
+
   @media screen and ($desktop-widths)
   {
     order: 3;
@@ -261,10 +277,12 @@
 }
 .city-promo__image2
 {
+
   @media screen and ($tablet-widths)
   {
     order: 3;
   }
+
   @media screen and ($desktop-widths)
   {
     order: 2;

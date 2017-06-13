@@ -8,9 +8,9 @@
     margin-right: 60px;
   }
 
-   @media screen and ($desktop-widths)
-   {
-     margin: 0;
+  @media screen and ($desktop-widths)
+  {
+    margin: 0;
   }
 }
 .photo-block
@@ -45,11 +45,13 @@
     //padding-bottom: 22px;
     padding-left: 20px;
     padding-right: 20px;
+
     @media screen and ($tablet-widths)
     {
       padding: 0;
     }
   }
+
   .photo-information
   {
     padding-top: 22px;
@@ -84,14 +86,17 @@
         color: white;
       }
     }
+
     .author__descr
     {
+
       @media screen and ($desktop-widths)
       {
         color: white;
       }
     }
   }
+
   .photo-likes
   {
     display: flex;
@@ -127,6 +132,7 @@
 
 .photo-block--big
 {
+
   @media screen and ($tablet-widths)
   {
     display: flex;
@@ -142,8 +148,10 @@
       position: relative;
     }
   }
+
   .photo-information
   {
+
     @media screen and ($tablet-widths)
     {
       padding-top: 22px;
@@ -157,8 +165,10 @@
       background: rgba(0,0,0,0.6);
     }
   }
+
   .photo-likes
   {
+
     @media screen and ($tablet-widths)
     {
       padding: 0;
@@ -174,6 +184,7 @@
     }
     p
     {
+
       @media screen and ($tablet-widths)
       {
         align-self: inherit;
