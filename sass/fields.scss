@@ -71,6 +71,13 @@ textarea:-ms-input-placeholder
 {
   padding-bottom: 28px;
 
+  @media screen and ($desktop-widths)
+  {
+    display: flex;
+
+    //width: 400px;
+  }
+
   p
   {
     color: #333333;
@@ -99,6 +106,13 @@ textarea:-ms-input-placeholder
     {
       padding-right: 432px;
     }
+
+    @media screen and ($desktop-widths)
+    {
+      //width: 400px;
+      margin:0;
+      padding-right: 99px;
+    }
   }
   input::-webkit-input-placeholder
   {
@@ -121,21 +135,31 @@ textarea:-ms-input-placeholder
   }
   .label__tel
   {
+    //display: none;
     position: absolute;
     background: #e6e6e6;
     padding-left: 22px;
     padding-top: 22px;
     padding-right: 22px;
     padding-bottom: 22px;
+    @media screen and ($desktop-widths)
+    {
+      left: 500px;
+    }
   }
   .label__email
   {
+    //display: none;
     position: absolute;
     background: #e6e6e6;
     padding-left: 22px;
     padding-top: 22px;
     padding-right: 22px;
     padding-bottom: 23px;
+    @media screen and ($desktop-widths)
+    {
+      right: 30px;
+    }
   }
 }
 /* Cначала обозначаем стили для IE8 и более старых версий
@@ -285,6 +309,11 @@ height: 17px;
   @media screen and ($tablet-widths)
   {
     width: 627px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    width: 960px;
   }
 }
 

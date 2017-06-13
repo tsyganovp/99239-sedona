@@ -25,6 +25,13 @@
 
   @media screen and ($desktop-widths)
   {
-    margin: 0 auto;
+    width: 480px;
+    margin: 0;
+    margin-right: 170px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    //margin: 0 auto;
   }
 }

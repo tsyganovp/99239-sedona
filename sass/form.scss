@@ -9,6 +9,12 @@ form
     flex-wrap: wrap;
     //width: 648px;
   }
+
+  @media screen and ($desktop-widths)
+  {
+    margin-top: 69px;
+  }
+
 }
 .form__inner
 {
@@ -31,6 +37,14 @@ form
       padding-bottom: 117px;
       padding-left: 156px;
       padding-right: 156px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 102px;
+      padding-bottom: 120px;
+      padding-left: 370px;
+      padding-right: 370px;
     }
   }
 
@@ -61,6 +75,12 @@ form
       line-height: 26px;
     }
 
+    @media screen and ($desktop-widths)
+    {
+      margin-left: 381px;
+      margin-right: 381px;
+    }
+
   }
   .form__text
   {
@@ -78,6 +98,13 @@ form
       //padding-right: 165px;
       border: none;
     }
+
+    @media screen and ($desktop-widths)
+    {
+      margin-left: 381px;
+      margin-right: 381px;
+    }
+
   }
   .form__person
   {
@@ -89,6 +116,11 @@ form
       border: none;
       order: 2;
       //width: 383px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 59px;
     }
 
     h3
@@ -106,6 +138,11 @@ form
       @media screen and ($tablet-widths)
       {
         margin-bottom: 85px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-bottom: 60px;
       }
 
     }
@@ -126,8 +163,16 @@ form
       order: 3;
       width: 800px;
       border: none;
-
     }
+
+    @media screen and ($desktop-widths)
+    {
+      width: 100%;
+      //margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
 
     h3
     {
@@ -167,11 +212,25 @@ form
           background: #efefef;
         }
       }
+
+      @media screen and ($desktop-widths)
+      {
+        width: 100%;
+        padding-bottom: 77px;
+      }
     }
     p
     {
       margin-left: 42px;
       margin-bottom: 7px;
+
+      @media screen and ($desktop-widths)
+      {
+        align-self: center;
+        padding: 0;
+        margin-left: 79px;
+        margin-right: 16px;
+      }
     }
   }
   .form__impressions
@@ -186,6 +245,12 @@ form
       border-right: 1px solid #ededed;
       order: 1;
     }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-right: 127px;
+    }
+
 
     h3
     {
@@ -202,6 +267,11 @@ form
       @media screen and ($tablet-widths)
       {
         margin-bottom: 79px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-bottom: 60px;
       }
     }
     p
@@ -281,6 +351,11 @@ form
         }
       }
 
+      @media screen and ($desktop-widths)
+      {
+        width: 100%;
+      }
+
     }
     .field__text
     {
@@ -304,6 +379,12 @@ form
         margin-bottom: 32px;
         //margin: 0;
         padding: 0;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin: 0;
+        width: 250px;
       }
     }
   }
@@ -364,6 +445,12 @@ form
           background: #efefef;
         }
       }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-top: 169px;
+        margin-bottom: 60px;
+      }
     }
   }
   .form__button
@@ -377,6 +464,11 @@ form
       justify-content: flex-start;
       order: 6;
       margin-top: 58px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      width: 975px;
     }
     .form__attention
     {
