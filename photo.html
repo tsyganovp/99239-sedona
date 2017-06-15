@@ -14,8 +14,9 @@
       <section class="page-header">
         <div class="page-header__inner">
           <div class="page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Logo"></div>
-          <nav class="main-nav"><span class="main-nav__toogler"><img src="img/icon-cross.svg" alt="Переключатель меню"></span>
-            <ul class="main-nav__list">
+          <nav class="main-nav"><span class="main-nav__toogler">
+              <!--img(src="img/icon-cross.svg" alt="Переключатель меню")--></span>
+            <ul class="main-nav main-nav__list--opened main-nav__list--closed">
               <li class="main‐nav__item">Главная</li>
               <li class="main‐nav__item">Фото и видео</li>
               <li class="main‐nav__item">Форма отзыва</li>
@@ -29,47 +30,73 @@
       <section class="media">
         <div class="media__inner">
           <div class="media__sedona"><img src="img/text-sedona.svg" alt="Седона"></div>
+          <!--.decoration.decoration-top--photoimg(src="img/bg-intro-triangle-mobile.svg")
+          -->
           <h2 class="media__header">Фото и видео</h2>
           <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           <div class="photos">
-            <div class="photos__photo-block"><img src="img/photo-1-mobile@1x.jpg" alt="Sedona Photo">
-              <p class="photo-block__descr">Народные просторы</p>
-              <p class="photo-block__author">Автор фото: Борис</p>
-              <div class="photo-block__likes"><img src="img/icon-like.svg" alt="Like">
-                <p>1350</p>
+            <div class="photo-block photo-block--big"><img src="img/photo-1-mobile@1x.jpg" alt="Sedona Photo">
+              <div class="photo-information">
+                <div class="information__author">
+                  <p class="author__descr">Народные просторы</p>
+                  <p class="author__name">Автор фото: Борис</p>
+                </div>
+                <div class="photo-likes"><img src="img/icon-like.svg" alt="Like">
+                  <p>1350</p>
+                </div>
               </div>
             </div>
-            <div class="photos__photo-block"><img src="img/photo-2-mobile@1x.jpg" alt="Sedona Photo">
-              <p class="photo-block__descr">Местные просторы</p>
-              <p class="photo-block__author">Автор фото: Сергей</p>
-              <div class="photo-block__likes"><img src="img/icon-like.svg" alt="Like">
-                <p>143</p>
+            <div class="photo-block"><img src="img/photo-2-mobile@1x.jpg" alt="Sedona Photo">
+              <div class="photo-information">
+                <div class="information__author">
+                  <p class="author__descr">Местные просторы</p>
+                  <p class="author__name">Автор фото: Сергей</p>
+                </div>
+                <div class="photo-likes"><img src="img/icon-like.svg" alt="Like">
+                  <p>143</p>
+                </div>
               </div>
             </div>
-            <div class="photos__photo-block"><img src="img/photo-3-mobile@1x.jpg" alt="Sedona Photo">
-              <p class="photo-block__descr">Дорога на север</p>
-              <p class="photo-block__author">Автор фото: Петр</p>
-              <div class="photo-block__likes"><img src="img/icon-like.svg" alt="Like">
-                <p>96</p>
+            <div class="photo-block"><img src="img/photo-3-mobile@1x.jpg" alt="Sedona Photo">
+              <div class="photo-information">
+                <div class="information__author">
+                  <p class="author__descr">Дорога на север</p>
+                  <p class="author__name">Автор фото: Петр</p>
+                </div>
+                <div class="photo-likes"><img src="img/icon-like.svg" alt="Like">
+                  <p>96</p>
+                </div>
               </div>
             </div>
-            <div class="photos__photo-block"><img src="img/photo-4-mobile@1x.jpg" alt="Sedona Photo">
-              <p class="photo-block__descr">Мост дьявола</p>
-              <p class="photo-block__author">Автор фото: Антон</p>
-              <div class="photo-block__likes"><img src="img/icon-like.svg" alt="Like">
-                <p>254</p>
+            <div class="photo-block"><img src="img/photo-4-mobile@1x.jpg" alt="Sedona Photo">
+              <div class="photo-information">
+                <div class="information__author">
+                  <p class="author__descr">Мост дьявола</p>
+                  <p class="author__name">Автор фото: Антон</p>
+                </div>
+                <div class="photo-likes"><img src="img/icon-like.svg" alt="Like">
+                  <p>254</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="video">
             <h1 class="video__header">Все еще сомневаетесь?</h1>
-            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p><img src="img/video-mobile@1x.jpg">
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p><img class="video-screen" src="img/video-mobile@1x.jpg">
             <!--videosource(src="#")
             -->
-          </div>
-          <div class="video-controls">
-            <div class="video-controls__upper"></div>
-            <div class="video-controls__downer"><img class="video-controls__replay" src="img/icon-video-replay.svg" alt="Повтор"><img class="video-controls__subtitles" src="img/icon-video-subtitles.svg" alt="Субтитры"><img class="video-controls__fullscreen" src="img/icon-video-fullscreen.svg" alt="Полный экран"></div>
+            <div class="video-controls">
+              <div class="video-controls__upper">
+                <form>
+                  <input type="range">
+                </form>
+              </div>
+              <div class="video-controls__downer">
+                <div class="downer__replay"><img class="video-controls__replay" src="img/icon-video-replay.svg" alt="Повтор"></div>
+                <div class="downer__subtitles"><img class="video-controls__subtitles" src="img/icon-video-subtitles.svg" alt="Субтитры"></div>
+                <div class="downer__fullscreen"><img class="video-controls__fullscreen" src="img/icon-video-fullscreen.svg" alt="Полный экран"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,55 @@
+.decoration-top
+{
+  position: absolute;
+  bottom: 177px;
+
+  @media screen and ($tablet-widths)
+  {
+    width: 720px;
+    position: absolute;
+    bottom: -232px;
+    left: 30px;
+  }
+
+  img
+  {
+    width: 100%;
+  }
+
+  &--photo
+  {
+    position: absolute;
+    top: 210px;
+    //left: 0;
+
+    img
+    {
+      width: 100%;
+    }
+
+    @media screen and ($tablet-widths)
+    {
+      height: 57px;
+      width: 768px;
+      position: absolute;
+      top: 298px;
+    }
+  }
+
+  &--form
+  {
+    position: absolute;
+    top: 205px;
+    //left: 0;
+  }
+}
+.decoration-bottom
+{
+  position: absolute;
+  top: -26px;
+
+  @media screen and ($tablet-widths)
+  {
+    display: none;
+  }
+}

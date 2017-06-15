@@ -3,18 +3,34 @@
 }
 .media__inner
 {
-  padding-left: 7.81%;
-  padding-right: 7.81%;
   font-family: "PT Sans";
   text-transform: uppercase;
+
   .media__sedona
   {
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: 100% 100%;
-    padding-left: 14.06%;
-    padding-right: 14.06%;
-    padding-bottom: 20.93%;
-    padding-top: 16.25%;
+    padding-left: 45px;
+    padding-top: 52px;
+    padding-right: 46px;
+    padding-bottom: 67px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 95px;
+      padding-bottom: 117px;
+      padding-left: 156px;
+      padding-right: 156px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 101px;
+      padding-bottom: 120px;
+      padding-left: 370px;
+      padding-right: 370px;
+    }
+
     img
     {
       width: 100%;
@@ -24,22 +40,60 @@
 
   .media__header
   {
-    padding-top: 13.75%;
-    padding-bottom: 13.5%;
+    padding-top: 44px;
+    padding-bottom: 38px;
     text-align: center;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 76px;
+      padding-bottom: 40px;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 113px;
+      padding-bottom: 40px;
+    }
   }
+
   .media__text
   {
-    padding-bottom: 10.31%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 33px;
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      //padding-left: 170px;
+      //padding-right: 170px;
+      padding-bottom: 75px;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      border-bottom: none;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      //padding-left: 386px;
+      //padding-right: 386px;
+      padding-bottom: 77px;
+    }
   }
 }

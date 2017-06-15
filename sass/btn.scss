@@ -2,11 +2,11 @@
 {
   border: none;
   margin: 0 auto;
-  margin-top: 12.5%;
-  padding-top: 6.07%;
-  padding-bottom: 6.07%;
+  margin-top: 40px;
+  padding-top: 17px;
+  padding-bottom: 19px;
   display: block;
-  width: 87.5%;
+  width: 280px;
   background: #84b5d2;
   color: #ffffff;
   font-family: "PT Sans";
@@ -15,4 +15,23 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media screen and ($tablet-widths)
+  {
+    margin: 0;
+    padding-bottom: 19px;
+    width: 324px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    width: 480px;
+    margin: 0;
+    margin-right: 170px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    //margin: 0 auto;
+  }
 }

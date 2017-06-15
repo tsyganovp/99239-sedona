@@ -1,5 +1,19 @@
-.form
+form
 {
+  @media screen and ($tablet-widths)
+  {
+    margin: 0;
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    //width: 648px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    margin-top: 69px;
+  }
 
 }
 .form__inner
@@ -10,12 +24,28 @@
   .sedona-introdution
   {
     background: url('../img/bg-back-mobile@1x.jpg');
-    //background-size: 100% 100%;
+    background-size: 100% 100%;
     text-align: center;
-    padding-top: 28.12%;
-    padding-bottom: 26.56%;
-    padding-left: 5.93%;
-    padding-right: 5.93%;
+    padding-left: 45px;
+    padding-top: 52px;
+    padding-right: 46px;
+    padding-bottom: 67px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 95px;
+      padding-bottom: 117px;
+      padding-left: 156px;
+      padding-right: 156px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 102px;
+      padding-bottom: 120px;
+      padding-left: 370px;
+      padding-right: 370px;
+    }
   }
 
   .intro__sedona
@@ -26,35 +56,77 @@
   .form__header
   {
     text-align: center;
-    padding-top: 12.81%;
-    padding-bottom: 12.5%;
+    padding-top: 41px;
+    padding-bottom: 40px;
     text-align: center;
-    padding-left: 6.87%;
-    padding-right: 6.87%;
+    //padding-left: 6.87%;
+    //padding-right: 6.87%;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 71px;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      margin-left: 381px;
+      margin-right: 381px;
+    }
+
   }
   .form__text
   {
     text-align: center;
-    padding-bottom: 6.87%;
+    padding-bottom: 22px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     border-bottom:1px solid #e5e5e5;
+
+    @media screen and ($tablet-widths)
+    {
+      //padding-left: 164px;
+      //padding-right: 165px;
+      border: none;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      margin-left: 381px;
+      margin-right: 381px;
+    }
+
   }
   .form__person
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 7.81%;
+    padding-bottom: 25px;
+
+    @media screen and ($tablet-widths)
+    {
+      border: none;
+      order: 2;
+      //width: 383px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 59px;
+    }
 
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 7.81%;
+      padding-top: 24px;
+      padding-bottom: 25px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -62,16 +134,50 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-bottom: 85px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-bottom: 60px;
+      }
+
+    }
+    .field__person
+    {
+      display: flex;
+      align-items: center;
     }
   }
   .form__contacts
   {
     border-bottom: 1px solid #e5e5e5;
 
+    @media screen and ($tablet-widths)
+    {
+      position: relative;
+      margin-top: 75px;
+      order: 3;
+      width: 800px;
+      border: none;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      width: 100%;
+      //margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 9%;
+      padding-top: 24px;
+      padding-bottom: 29px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -79,17 +185,77 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin: 0 auto;
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 35px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 35px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        width: 100%;
+        padding-bottom: 77px;
+      }
+    }
+    p
+    {
+      margin-left: 42px;
+      margin-bottom: 7px;
+
+      @media screen and ($desktop-widths)
+      {
+        align-self: center;
+        padding: 0;
+        margin-left: 79px;
+        margin-right: 16px;
+      }
     }
   }
   .form__impressions
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 8.73%;
+    padding-bottom: 27px;
+
+    @media screen and ($tablet-widths)
+    {
+      width: 324px;
+      border-bottom:none;
+      border-right: 1px solid #ededed;
+      order: 1;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-right: 127px;
+    }
+
 
     h3
     {
-      padding-top: 7.81%;
-      padding-bottom: 8.73%;
+      padding-top: 24px;
+      padding-bottom: 27px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -97,6 +263,16 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-bottom: 79px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-bottom: 60px;
+      }
     }
     p
     {
@@ -110,19 +286,32 @@
     }
     .field__radio
     {
-      margin: 11%;
+      margin-left: 20px;
+      margin-right: 22px;
+      margin-bottom: 30px;
     }
   }
   .form__atraction
   {
     //background: #e6e6e6;
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 6.56%;
+    padding-bottom: 25px;
+
+    @media screen and ($tablet-widths)
+    {
+      order: 4;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      padding-bottom: 0;
+      border:none;
+    }
 
     h3
     {
-      padding-top: 6.56%;
-      padding-bottom: 6.56%;
+      padding-top: 24px;
+      padding-bottom: 21px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -130,6 +319,43 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        width: 648px;
+        margin: 0 auto;
+        padding-bottom: 65px;
+        padding-top: 58px;
+
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 67px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 67px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        width: 100%;
+      }
+
     }
     .field__text
     {
@@ -139,23 +365,49 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
-      text-align: right;
+      text-align: center;
     }
     .field__checkbox
     {
-      margin-top: 10%;
+      margin-left: 24px;
+      margin-top: 64px;
+      padding-bottom: 25px;
 
+      @media screen and ($tablet-widths)
+      {
+        width: 320px;
+        margin-bottom: 32px;
+        //margin: 0;
+        padding: 0;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin: 0;
+        width: 250px;
+      }
     }
   }
   .form__opinions
   {
-    margin-bottom: 15.93%;
-    padding-left: 6.51%;
-    padding-right: 6.51%;
+    margin-bottom: 51px;
+    margin-right: 20px;
+    //margin-left: 20px;
+    padding-left: 19px;
+    padding-right: 22px;
+
+    @media screen and ($tablet-widths)
+    {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      order: 5;
+    }
+
     h3
     {
-      padding-top: 7.5%;
-      padding-bottom: 7.5%;
+      padding-top: 24px;
+      padding-bottom: 21px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -163,6 +415,76 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-top: 73px;
+        margin-bottom: 60px;
+        padding: 0;
+
+        &:before
+        {
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 83px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+        &:after
+        {
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 83px;
+          content: "";
+          width: 200px;
+          height: 1px;
+          background: #efefef;
+        }
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-top: 169px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .form__button
+  {
+    @media screen and ($tablet-widths)
+    {
+      //margin-right: 155px;
+      margin-bottom: 61px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      order: 6;
+      margin-top: 58px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      width: 975px;
+    }
+    .form__attention
+    {
+      display: none;
+      @media screen and ($tablet-widths)
+      {
+        margin-left: 162px;
+        display: block;
+        align-self: center;
+        color: #333333;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+      }
     }
   }
 }

@@ -1,6 +1,18 @@
 body
 {
   width: 320px;
+  margin: 0 auto;
+  @media screen and ($tablet-widths)
+  {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 h1,h2,h3,p,li
 {

@@ -1,19 +1,43 @@
 .hotel
 {
-  padding-bottom: 15.31%;
-  padding-left: 10.37%;
-  padding-right: 10.37%;
+  padding-top: 33px;
+  padding-bottom: 49px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: "PT Sans";
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and ($tablet-widths)
+  {
+    padding-left: 155px;
+    padding-top: 57px;
+    padding-right: 155px;
+    padding-bottom: 58px;
+  }
+  @media screen and ($desktop-widths)
+  {
+    padding-top: 57px;
+    padding-bottom: 66px;
+    padding-left: 383px;
+    padding-right: 383px;
+  }
+
   .hotel__header
   {
-    padding-top: 10.31%;
-    padding-bottom: 9.37%;
+    padding-bottom: 40px;
     color: #000000;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
   .hotel__text
   {
@@ -21,5 +45,18 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-bottom: 52px;
+    }
   }
 }

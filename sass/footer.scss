@@ -2,10 +2,16 @@
 {
   .page-footer__inner
   {
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+      //align-items: center;
+    }
+
     .hashtag
     {
-      padding-top: 12.81%;
-      padding-bottom: 12.81%;
+      padding-top: 31px;
+      padding-bottom: 41px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -13,27 +19,73 @@
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        padding-left: 60px;
+        padding-right: 112px;
+        padding-top: 51px;
+        padding-bottom: 53px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        padding-top: 51px;
+        padding-bottom: 53px;
+        padding-left: 132px;
+        padding-right: 256px;
+      }
     }
     .page-footer__socio
     {
       list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+      margin-bottom: 51px;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-top: 36px;
+      }
       li
       {
         background: #84b5d2;
-        width: 47.18%;
+        width: 46px;
         text-align: center;
+        margin-left: 3px;
+        margin-right: 3px;
         img
         {
-          padding-top: 34.69%;
-          padding-bottom: 34.69%;
+          width: 18px;
+          height: 14px;
+          vertical-align: middle;
+          padding-top: 17px;
+          padding-bottom: 17px;
         }
       }
     }
   }
   .footer__developers
   {
+    display: flex;
+    justify-content: center;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-left: 133px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 349px;
+    }
+
     .developers__text
     {
+      align-self: center;
+      padding-right: 11px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";

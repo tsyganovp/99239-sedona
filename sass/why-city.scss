@@ -4,6 +4,8 @@
 }
 .why-city__inner
 {
+  position: relative;
+
   .city-promo
   {
     text-align: center;
@@ -11,58 +13,197 @@
     color: #ffffff;
     font-family: "PT Sans";
     text-transform: uppercase;
-    .city-promo__header
+
+    @media screen and ($tablet-widths)
     {
-      padding-left: 10.3%;
-      padding-right: 10.3%;
-      padding-top: 12.5%;
-      padding-bottom: 6.25%;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 26px;
+      display: flex;
     }
-    .city-promo__number
+
+    @media screen and ($desktop-widths)
     {
-      padding-top: 6.25%;
-      padding-bottom: 9.37%;
-      padding-left: 10.3%;
-      padding-right: 10.3%;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
+      display: flex;
     }
-    .city-promo__descr
+
+    .city-promo__text
     {
-      padding-left: 10.3%;
-      padding-right: 10.3%;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        display: flex;
+        flex-direction: column;
+        padding: 47px;
+        padding-top: 46px;
+        padding-bottom: 49px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        padding: 67px;
+        padding-top: 53px;
+        padding-bottom: 63px;
+      }
+
+      .city-promo__header
+      {
+        padding-left: 28px;
+        padding-top: 43px;
+        padding-right: 27px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+        }
+      }
+
+      .city-promo__number
+      {
+        padding-right: 27px;
+        padding-top: 20px;
+        padding-right: 28px;
+        padding-bottom: 25px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .city-promo__descr
+      {
+        padding-left: 27px;
+        padding-right: 28px;
+        padding-bottom: 45px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+        @media screen and ($tablet-widths)
+        {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+        }
+      }
     }
-    .city-promo__img
+
+    .city-promo__image
     {
-      padding-top: 13.125%;
       vertical-align: middle;
+
+      img
+      {
+        vertical-align: middle;
+
+        @media screen and ($tablet-widths)
+        {
+          width: 512px;
+        }
+
+        @media screen and ($desktop-widths)
+        {
+          width: 800px;
+          height: 256px;
+          vertical-align: middle;
+          order: 2;
+        }
+
+        &:nth-child(2)
+        {
+
+          @media screen and ($desktop-widths)
+          {
+            order:1
+          }
+        }
+      }
+
+      @media screen and ($tablet-widths)
+      {
+        //width: 512px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        order: 2;
+      }
     }
   }
+
   .city-promo--inverted
   {
+    text-align: center;
     background: #efefef;
-    padding-top: 10.31%;
-    padding-left: 12.81%;
-    padding-right: 12.81%;
-    padding-bottom: 10.31%;
+    padding-top: 20px;
+    //padding-bottom: 25px;
+    padding-left: 41px;
+    padding-right: 41px;
     text-align: center;
     font-family: "PT Sans";
     text-transform: uppercase;
-    border-bottom: 1px solid #d7d7d7;
+
+    @media screen and ($tablet-widths)
+    {
+      display: flex;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .city-promo__gray
+  {
+
+    @media screen and ($tablet-widths)
+    {
+      //text-align: center;
+      //width: 256px;
+      padding-left: 56px;
+      padding-top: 50px;
+      padding-right: 48px;
+      padding-bottom: 49px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-left: 63px;
+      padding-top: 63px;
+      padding-right: 48px;
+      padding-bottom: 70px;
+    }
+
     .city-promo__header
     {
       color: #000000;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
+
+      @media screen and ($tablet-widths)
+      {
+        color: #000000;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+      }
     }
+
     .city-promo__number
     {
       padding-top: 6.25%;
@@ -71,35 +212,79 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    .city-promo__descr
+    {
+      border-bottom: 1px solid #d7d7d7;
+      padding-bottom: 32px;
+
+      &:last-of-type
+      {
+        border: 0;
+      }
     }
   }
 }
+
 .why-city__features
 {
-  padding-top: 8.125%;
-  padding-bottom: 13.125%;
+  margin-top: 41px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   font-family: "PT Sans";
   text-transform: uppercase;
-  padding-right: 12.8%;
-  .features__img
+
+  @media screen and ($tablet-widths)
   {
-    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 63px;
+    margin-bottom: 66px;
   }
-  .features__header
+
+  @media screen and ($desktop-widths)
   {
-    padding-bottom: 7.81%;
-    text-align: left;
-    color: #000000;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
+    margin-top: 60px;
+    margin-bottom: 85px;
   }
-  .features__text
+}
+
+.city-promo__text2
+{
+
+  @media screen and ($tablet-widths)
   {
-    text-align: center;
-    color: #333333;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    order:4;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    order: 3;
+  }
+}
+.city-promo__image2
+{
+
+  @media screen and ($tablet-widths)
+  {
+    order: 3;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    order: 2;
   }
 }

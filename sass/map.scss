@@ -5,13 +5,22 @@
 .map__inner
 {
   position: relative;
-  width: 100%;
+  width: 320px;
   //background: url(../img/bg-map-mobile@1x.jpg);
+
+  @media screen and ($tablet-widths)
+  {
+    width: 768px;
+  }
+
+  @media screen and ($tablet-widths)
+  {
+    width: 1200px;
+  }
   .map__pointer
   {
     position: absolute;
-    top: 50.31%;
-    left: 45.62%;
-
+    top: 164px;
+    left: 586px;
   }
 }

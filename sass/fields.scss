@@ -36,10 +36,16 @@ textarea:-ms-input-placeholder
 {
   color: black;
 }
+
 .field__person
 {
+  margin-bottom: 20px;
+
   p
   {
+    margin-left: 20px;
+    margin-right: 14px;
+    //padding-right: 13px;
     color: #333333;
     font-family: "PT Sans";
     font-size: 14px;
@@ -47,9 +53,14 @@ textarea:-ms-input-placeholder
     line-height: 26px;
     text-transform: uppercase;
   }
+
   .field-text__input
   {
-    padding:6.56%;
+    width: 100%;
+    margin-right: 20px;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-bottom: 19px;
     background: #f3f3f3;
     border:none;
     color: #000000;
@@ -61,7 +72,14 @@ textarea:-ms-input-placeholder
 }
 .field__contacts
 {
-  padding-bottom: 7.85%;
+  padding-bottom: 28px;
+
+  @media screen and ($desktop-widths)
+  {
+    display: flex;
+    //width: 400px;
+  }
+
   p
   {
     color: #333333;
@@ -71,10 +89,14 @@ textarea:-ms-input-placeholder
     line-height: 26px;
     text-transform: uppercase;
   }
+
   .field-text__input
   {
+    margin-left: 20px;
     position: relative;
-    padding:6.56%;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-bottom: 19px;
     background: #f3f3f3;
     border:none;
     color: #000000;
@@ -82,7 +104,20 @@ textarea:-ms-input-placeholder
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-right: 432px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      //width: 400px;
+      margin:0;
+      padding-right: 99px;
+    }
   }
+
   input::-webkit-input-placeholder
   {
     color: black;
@@ -102,30 +137,52 @@ textarea:-ms-input-placeholder
   {
     color: black;
   }
+
   .label__tel
   {
+    //display: none;
     position: absolute;
     background: #e6e6e6;
-    padding: 1.8%;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+
+    @media screen and ($desktop-widths)
+    {
+      left: 500px;
+    }
   }
+
   .label__email
   {
+    //display: none;
     position: absolute;
     background: #e6e6e6;
-    padding: 1.9%;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 23px;
+
+    @media screen and ($desktop-widths)
+    {
+      right: 30px;
+    }
   }
 }
 /* Cначала обозначаем стили для IE8 и более старых версий
 т.е. здесь мы немного облагораживаем стандартный чекбокс. */
-.input-checkbox {
-vertical-align: top;
-margin: 0 3px 0 0;
-width: 17px;
-height: 17px;
+.input-checkbox
+{
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
 }
 /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
 селекторы с плюсом. Показываем, что label кликабелен. */
-.input-checkbox + label {
+.input-checkbox + label
+{
   cursor: pointer;
 }
 
@@ -134,16 +191,19 @@ height: 17px;
 в них все нижеследующие стили не сработают. */
 
 /* Прячем оригинальный чекбокс. */
-.input-checkbox:not(checked) {
+.input-checkbox:not(checked)
+{
   position: absolute;
   opacity: 0;
 }
-.input-checkbox:not(checked) + label {
+.input-checkbox:not(checked) + label
+{
   position: relative; /* будем позиционировать псевдочекбокс относительно label */
   //padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
 }
 /* Оформление первой части чекбокса в выключенном состоянии (фон). */
-.input-checkbox:not(checked) + label:before {
+.input-checkbox:not(checked) + label:before
+{
   content:"";
   position: absolute;
   top: -4px;
@@ -155,7 +215,8 @@ height: 17px;
   //box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
 }
 /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
-.input-checkbox:not(checked) + label:after {
+.input-checkbox:not(checked) + label:after
+{
   content: "";
   position: absolute;
   top: 15px;
@@ -168,38 +229,46 @@ height: 17px;
   transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
 }
 /* Меняем фон чекбокса, когда он включен. */
-.input-checkbox:checked + label:before {
+.input-checkbox:checked + label:before
+{
   background: #f3f3f3;
 }
 /* Сдвигаем переключатель чекбокса, когда он включен. */
-.input-checkbox:checked + label:after {
+.input-checkbox:checked + label:after
+{
   content:  url("../img/icon-tick.svg");
   //left: 26px;
 }
 /* Показываем получение фокуса. */
-.input-checkbox:focus + label:before {
+.input-checkbox:focus + label:before
+{
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }
 
 
-.radio {
+.radio
+{
   vertical-align: top;
   width: 17px;
   height: 17px;
   margin: 0 3px 0 0;
 }
-.radio + label {
+.radio + label
+{
   cursor: pointer;
 }
-.radio:not(checked) {
+.radio:not(checked)
+{
   position: absolute;
   opacity: 0;
 }
-.radio:not(checked) + label {
+.radio:not(checked) + label
+{
   position: relative;
   padding: 0 0 0 35px;
 }
-.radio:not(checked) + label:before {
+.radio:not(checked) + label:before
+{
   content: '';
   position: absolute;
   top: -3px;
@@ -210,7 +279,8 @@ height: 17px;
   border-radius: 55%;
   background: #f3f3f3;
 }
-.radio:not(checked) + label:after {
+.radio:not(checked) + label:after
+{
   content: '';
   position: absolute;
   /*
@@ -225,10 +295,10 @@ height: 17px;
   transition: all .2s;
   */
 }
-.radio:checked + label:after {
+.radio:checked + label:after
+{
   content: '';
   position: absolute;
-
   top: 15px;
   left: 20px;
   width: 26px;
@@ -238,18 +308,19 @@ height: 17px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
   opacity: 0;
   transition: all .2s;
-
   opacity: 1;
 }
-.radio:focus + label:before {
+.radio:focus + label:before
+{
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }
 
 .field-textarea
 {
-  padding-top: 6.56%;
-  padding-left: 6.56%;
-  width: 93.75%;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 95px;
+  width: 280px;
   border: none;
   background: #f2f2f2;
   color: #000000;
@@ -257,4 +328,14 @@ height: 17px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
+  @media screen and ($tablet-widths)
+  {
+    width: 627px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    width: 960px;
+  }
 }
