@@ -62,6 +62,7 @@
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
+    z-index: 2;
 
     @media screen and ($tablet-widths)
     {
@@ -104,6 +105,7 @@
     align-items: flex-start;
     margin-top: 11px;
     padding-bottom: 21px;
+    z-index: 2;
 
     @media screen and ($tablet-widths)
     {
@@ -151,7 +153,7 @@
 
   .photo-information
   {
-
+    z-index: 2;
     @media screen and ($tablet-widths)
     {
       padding-top: 22px;
@@ -168,7 +170,7 @@
 
   .photo-likes
   {
-
+    z-index: 2;
     @media screen and ($tablet-widths)
     {
       padding: 0;

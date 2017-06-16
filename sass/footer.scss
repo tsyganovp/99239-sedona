@@ -2,6 +2,8 @@
 {
   .page-footer__inner
   {
+    margin: 0 auto;
+
     @media screen and ($tablet-widths)
     {
       display: flex;
