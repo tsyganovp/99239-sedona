@@ -191,9 +191,9 @@
     @media screen and ($desktop-widths)
     {
       padding-left: 63px;
-      padding-top: 63px;
+      padding-top: 46px;
       padding-right: 48px;
-      padding-bottom: 70px;
+      padding-bottom: 35px;
     }
 
     .city-promo__header
@@ -214,8 +214,8 @@
 
     .city-promo__number
     {
-      padding-top: 6.25%;
-      padding-bottom: 9.37%;
+      padding-top: 20px;
+      padding-bottom: 33px;
       color: #333333;
       font-size: 14px;
       font-weight: 400;
@@ -227,6 +227,12 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
+      }
+
+      @media screen and ($tablet-widths)
+      {
+        padding-top: 8px;
+        padding-bottom: 23px;
       }
     }
 
@@ -266,7 +272,7 @@
   @media screen and ($desktop-widths)
   {
     margin-top: 60px;
-    margin-bottom: 85px;
+    margin-bottom: 75px;
   }
 }
 
