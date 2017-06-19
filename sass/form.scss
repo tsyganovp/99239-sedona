@@ -33,6 +33,8 @@ form
 
     @media screen and ($tablet-widths)
     {
+      background: url('../img/bg-back-tablet@1x.jpg');
+      background-size: 100% 100%;
       padding-top: 95px;
       padding-bottom: 117px;
       padding-left: 156px;
@@ -41,10 +43,24 @@ form
 
     @media screen and ($desktop-widths)
     {
+      background: url('../img/bg-back-desktop@1x.jpg');
+      background-size: 100% 100%;
       padding-top: 102px;
       padding-bottom: 120px;
       padding-left: 370px;
       padding-right: 370px;
+    }
+
+    @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
+    }
+
+    @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
     }
   }
 

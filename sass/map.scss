@@ -6,21 +6,39 @@
 {
   position: relative;
   width: 320px;
-  //background: url(../img/bg-map-mobile@1x.jpg);
-
+  background: url(../img/bg-map-mobile@1x.jpg) no-repeat;
+  background-size: 100% 100%;
   @media screen and ($tablet-widths)
   {
+    background: url(../img/bg-map-tablet@1x.jpg) no-repeat;
+    background-size: 100% 100%;
     width: 768px;
+    //height: 350px;
   }
 
-  @media screen and ($tablet-widths)
+  @media screen and ($desktop-widths)
   {
+    //width: 320px;
+    background: url(../img/bg-map-desktop@1x.jpg) no-repeat;
+    background-size: 100% 100%;
     width: 1200px;
   }
   .map__pointer
   {
-    position: absolute;
-    top: 164px;
-    left: 586px;
+    //position: absolute;
+    text-align: center;
+    padding-top: 161px;
+    padding-bottom: 162px;
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 164px;
+      padding-bottom: 159px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding-top: 161px;
+      padding-bottom: 162px;
+    }
   }
 }

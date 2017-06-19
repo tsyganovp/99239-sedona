@@ -40,7 +40,7 @@
       {
         padding: 67px;
         padding-top: 53px;
-        padding-bottom: 63px;
+        padding-bottom: 53px;
       }
 
       .city-promo__header
@@ -54,13 +54,16 @@
 
         @media screen and ($tablet-widths)
         {
-          padding-left: 0;
-          padding-right: 0;
+          padding: 0;
         }
 
         @media screen and ($desktop-widths)
         {
+          font-size: 21px;
+          font-weight: 700;
           padding: 0;
+          padding-left: 45px;
+          padding-right: 45px;
         }
       }
 
@@ -79,6 +82,11 @@
           padding-left: 0;
           padding-right: 0;
         }
+
+        @media screen and ($desktop-widths)
+        {
+          padding-top: 4px;
+        }
       }
 
       .city-promo__descr
@@ -92,8 +100,7 @@
 
         @media screen and ($tablet-widths)
         {
-          padding-left: 0;
-          padding-right: 0;
+          padding: 0;;
         }
 
         @media screen and ($desktop-widths)
@@ -114,6 +121,7 @@
         @media screen and ($tablet-widths)
         {
           width: 512px;
+          height: 256px;
         }
 
         @media screen and ($desktop-widths)

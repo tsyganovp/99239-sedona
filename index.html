@@ -13,14 +13,19 @@
     <header>
       <section class="page-header">
         <div class="page-header__inner">
-          <div class="page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="Logo"></div>
+          <div class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"><img src="img/logo-sedona-mobile.svg" alt="Logo">
+            </picture>
+          </div>
           <nav class="main-nav"><span class="main-nav__toogler">
               <!--img(src="img/icon-cross.svg" alt="Переключатель меню")--></span>
             <ul class="main-nav main-nav__list--opened main-nav__list--closed">
-              <li class="main‐nav__item">Главная</li>
-              <li class="main‐nav__item">Фото и видео</li>
-              <li class="main‐nav__item">Форма отзыва</li>
-              <li class="main‐nav__item">Html academy</li>
+              <li class="main‐nav__item"><a class="nav__link">Главная</a></li>
+              <li class="main‐nav__item"><a class="nav__link">Фото и видео</a></li>
+              <li class="main‐nav__item"><a class="nav__link">Форма отзыва</a></li>
+              <li class="main‐nav__item"><a class="nav__link">Html academy</a></li>
             </ul>
           </nav>
         </div>
@@ -29,7 +34,8 @@
     <main>
       <section class="intro">
         <div class="intro__inner">
-          <div class="intro__upper"><img class="intro__sedona" src="img/text-sedona-index.svg">
+          <div class="intro__upper">
+            <picture><img class="intro__sedona" src="img/text-sedona-index.svg"></picture>
             <!--h1.intro__text-welcome Welcome-->
             <!--p.intro__text-gorgeous to the gorgeous-->
             <!--p.intro__text-sedona sedona-->
@@ -53,24 +59,30 @@
               <p class="city-promo__number">- №1 -</p>
               <p class="city-promo__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="city-promo__image"><img class="city-promo__img" src="img/photo-city-mobile@1x.jpg" alt="Sedona"></div>
+            <div class="city-promo__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x,img/photo-city@2x.jpg 2x ">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x,img/photo-city-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-city-mobile@2x.jpg 2x"><img class="city-promo__img" src="img/photo-city-mobile@1x.jpg" alt="Sedona">
+              </picture>
+            </div>
           </div>
           <div class="why-city__features">
-            <div class="feature">
+            <div class="feature feature__home">
               <div class="feature__img"><img src="img/icon-house.svg" alt="Features Image"></div>
               <div class="feature__text">
                 <h2 class="feature__header">Жилье</h2>
                 <p class="feature__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </div>
-            <div class="feature">
+            <div class="feature feature__gifts">
               <div class="feature__img"><img src="img/icon-gift.svg" alt="Features Image"></div>
               <div class="feature__text">
                 <h2 class="feature__header">Сувениры</h2>
                 <p class="feature__paragraph">Не только китайского, но и местного производства!</p>
               </div>
             </div>
-            <div class="feature">
+            <div class="feature feature__meal">
               <div class="feature__img"><img src="img/icon-burger.svg" alt="Features Image"></div>
               <div class="feature__text">
                 <h2 class="feature__header">Еда</h2>
@@ -84,7 +96,13 @@
               <p class="city-promo__number">- №2 -</p>
               <p class="city-promo__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="city-promo__image city-promo__image2"><img class="city-promo__img" src="img/photo-bridge-mobile@1x.jpg" alt="Sedona"></div>
+            <div class="city-promo__image city-promo__image2">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x"><img class="city-promo__img" src="img/photo-bridge-mobile@1x.jpg" alt="Sedona">
+              </picture>
+            </div>
           </div>
           <div class="city-promo--inverted">
             <div class="city-promo__gray">
@@ -112,7 +130,8 @@
         </div>
       </section>
       <section class="map">
-        <div class="map__inner"><img src="img/bg-map-mobile@1x.jpg">
+        <div class="map__inner">
+          <!--img(src="img/bg-map-mobile@1x.jpg")-->
           <div class="map map__pointer"><img src="img/icon-map-marker.svg"></div>
         </div>
       </section>
