@@ -33,7 +33,7 @@
         flex-direction: column;
         padding: 47px;
         padding-top: 46px;
-        padding-bottom: 49px;
+        padding-bottom: 39px;
       }
 
       @media screen and ($desktop-widths)
@@ -79,6 +79,7 @@
 
         @media screen and ($tablet-widths)
         {
+          padding-top: 10px;
           padding-left: 0;
           padding-right: 0;
         }
@@ -183,7 +184,7 @@
       //text-align: center;
       //width: 256px;
       padding-left: 56px;
-      padding-top: 50px;
+      padding-top: 45px;
       padding-right: 48px;
       padding-bottom: 49px;
     }
@@ -245,6 +246,11 @@
       {
         border: 0;
       }
+
+      @media screen and ($tablet-widths)
+      {
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -266,7 +272,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 63px;
-    margin-bottom: 66px;
+    margin-bottom: 53px;
   }
 
   @media screen and ($desktop-widths)
@@ -288,6 +294,7 @@
   {
     order: 3;
   }
+
 }
 .city-promo__image2
 {

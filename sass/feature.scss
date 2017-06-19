@@ -6,6 +6,7 @@
 
   @media screen and ($tablet-widths)
   {
+    width: 170px;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
@@ -31,6 +32,7 @@
 
     img
     {
+      vertical-align: middle;
       width: inherit;
     }
   }
@@ -58,7 +60,7 @@
 
       @media screen and ($tablet-widths)
       {
-        padding-top: 33px;
+        padding-top: 26px;
       }
 
       @media screen and ($desktop-widths)
@@ -69,12 +71,18 @@
       }
     }
 
-    .feature__parargaph
+    .feature__paragraph
     {
       color: #333333;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+
+      @media screen and ($tablet-widths)
+      {
+        font-size: 14px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -94,21 +102,28 @@
     }
   }
 
-  img
-  {
-    @media screen and ($desktop-widths)
-    {
-
-    }
-  }
-
 }
+
 .feature__gifts
 {
   @media screen and ($desktop-widths)
   {
     order: 3;
   }
+
+  @media screen and ($tablet-widths)
+  {
+    order: 3;
+  }
+
+  img
+  {
+    @media screen and ($desktop-widths)
+    {
+      height: 75px;
+    }
+  }
+
 }
 .feature__meal
 {
@@ -119,8 +134,16 @@
     margin-right: 105px;
   }
 
+  @media screen and ($tablet-widths)
+  {
+    margin-left: 85px;
+    margin-right: 85px;
+    order: 2;
+  }
+
   img
   {
+
     @media screen and ($desktop-widths)
     {
       height: 68px;
