@@ -93,6 +93,11 @@
       font-weight: 400;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($desktop-widths)
+      {
+        margin-left: 144px
+      }
     }
   }
 }
