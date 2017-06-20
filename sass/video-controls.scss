@@ -79,6 +79,13 @@
           padding-top: 35px;
           padding-left: 35px;
         }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+          padding-top: 35px;
+          padding-left: 27px;
+        }
         img
         {
           width: 32px;
@@ -98,7 +105,7 @@
 
         @media screen and ($desktop-widths)
         {
-          padding-left: 624px;
+          padding-left: 616px;
         }
 
         img
@@ -115,6 +122,14 @@
           padding-top: 35px;
           padding-left: 31px;
         }
+
+        @media screen and ($desktop-widths)
+        {
+          padding: 0;
+          padding-top: 35px;
+          padding-left: 25px;
+        }
+
         img
         {
           width: 32px;
