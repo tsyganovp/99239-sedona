@@ -97,6 +97,11 @@
       {
         color: white;
       }
+
+      @media screen and ($tablet-widths)
+      {
+        width: 181px;
+      }
     }
   }
 
@@ -110,7 +115,7 @@
 
     @media screen and ($tablet-widths)
     {
-      margin-left: 107px;
+      margin-left: 36px;
     }
 
     @media screen and ($desktop-widths)
@@ -158,7 +163,7 @@
     @media screen and ($tablet-widths)
     {
       padding-top: 22px;
-      padding-bottom: 21px;
+      padding-bottom: 10px;
       padding-left: 20px;
     }
 
@@ -179,7 +184,7 @@
       padding-top: 6px;
       margin: 0;
       //margin-top: 28px;
-      margin-left: 400px;
+      margin-left: 360px;
     }
 
     @media screen and ($desktop-widths)
