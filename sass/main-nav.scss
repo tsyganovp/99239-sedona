@@ -87,7 +87,10 @@
 
       @media screen and ($desktop-widths)
       {
-        margin-right: 244px;
+        &:nth-child(2)
+        {
+          margin-right: 244px;
+        }
       }
     }
   }
