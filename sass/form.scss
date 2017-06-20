@@ -10,6 +10,10 @@ form
     //width: 648px;
   }
 
+  @media screen and ($tablet-widths)
+  {
+    margin-top: 22px;
+  }
   @media screen and ($desktop-widths)
   {
     margin-top: 13px;
@@ -138,6 +142,7 @@ form
       border: none;
       order: 2;
       //width: 383px;
+      padding-left: 40px;
     }
 
     @media screen and ($desktop-widths)
@@ -160,11 +165,17 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-bottom: 85px;
+        margin-bottom: 30px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: left;
       }
 
       @media screen and ($desktop-widths)
       {
+
         text-align: left;
         margin-bottom: 27px;
       }
@@ -183,7 +194,7 @@ form
     @media screen and ($tablet-widths)
     {
       position: relative;
-      margin-top: 75px;
+      margin-top: 10px;
       order: 3;
       width: 800px;
       border: none;
@@ -214,6 +225,12 @@ form
       @media screen and ($tablet-widths)
       {
         margin: 0 auto;
+        padding-bottom: 19px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+
         &:before
         {
           display: block;
@@ -260,6 +277,11 @@ form
         margin-left: 79px;
         margin-right: 16px;
       }
+
+      @media screen and ($tablet-widths)
+      {
+        margin-left: 80px;
+      }
     }
   }
   .form__impressions
@@ -273,6 +295,7 @@ form
       border-bottom:none;
       border-right: 1px solid #ededed;
       order: 1;
+      padding-right: 49px;
     }
 
     @media screen and ($desktop-widths)
@@ -296,7 +319,11 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-bottom: 79px;
+        margin-bottom: 26px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
       }
 
       @media screen and ($desktop-widths)
@@ -361,7 +388,7 @@ form
         width: 648px;
         margin: 0 auto;
         padding-bottom: 65px;
-        padding-top: 58px;
+        padding-top: 44px;
 
         &:before
         {
@@ -384,6 +411,20 @@ form
           width: 200px;
           height: 1px;
           background: #efefef;
+        }
+
+        @media screen and ($tablet-widths)
+        {
+          &:before
+          {
+            top:55px;
+            right: - 30px;
+          }
+          &:after
+          {
+            top:55px;
+            left: - 30px;
+          }
         }
       }
 
@@ -417,7 +458,9 @@ form
       @media screen and ($tablet-widths)
       {
         width: 320px;
-        margin-bottom: 32px;
+        margin-top: 0;
+        margin-bottom: 61px;
+            margin-right: -83px;
         //margin: 0;
         padding: 0;
       }
@@ -459,7 +502,11 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-top: 73px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-top: 31px;
         margin-bottom: 60px;
         padding: 0;
 
@@ -468,7 +515,7 @@ form
           display: block;
           position: absolute;
           right: -40px;
-          top: 83px;
+          top: 41px;
           content: "";
           width: 200px;
           height: 1px;
@@ -479,7 +526,7 @@ form
           display: block;
           position: absolute;
           left: -40px;
-          top: 83px;
+          top: 41px;
           content: "";
           width: 200px;
           height: 1px;
@@ -516,12 +563,18 @@ form
       width: 975px;
       margin-bottom:  55px;
     }
+
+    @media screen and ($tablet-widths)
+    {
+      margin-top: 0;
+
+    }
     .form__attention
     {
       display: none;
       @media screen and ($tablet-widths)
       {
-        margin-left: 162px;
+        margin-left: 148px;
         display: block;
         align-self: center;
         color: #333333;
@@ -530,6 +583,10 @@ form
         font-weight: 400;
         line-height: 26px;
         text-transform: uppercase;
+
+        margin-top: 53px;
+    margin-left: 156px;
+
       }
     }
   }

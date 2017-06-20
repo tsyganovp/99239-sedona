@@ -46,6 +46,11 @@ textarea:-ms-input-placeholder
     margin-bottom: 12px;
   }
 
+  @media screen and ($tablet-widths)
+  {
+    margin-bottom: 9px;
+  }
+
   p
   {
     margin-left: 20px;
@@ -92,6 +97,11 @@ textarea:-ms-input-placeholder
     margin-left: 24px;
   }
 
+  @media screen and ($tablet-widths)
+  {
+    padding-bottom: 21px;
+  }
+
   p
   {
     color: #333333;
@@ -119,7 +129,10 @@ textarea:-ms-input-placeholder
 
     @media screen and ($tablet-widths)
     {
-      padding-right: 432px;
+      margin-left: 61px;
+      padding-right: 380px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     @media screen and ($desktop-widths)
@@ -168,6 +181,12 @@ textarea:-ms-input-placeholder
       padding-top: 16px;
       padding-bottom: 16px;
     }
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
 
   .label__email
@@ -183,6 +202,12 @@ textarea:-ms-input-placeholder
     @media screen and ($desktop-widths)
     {
       right: 119px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media screen and ($tablet-widths)
+    {
       padding-top: 16px;
       padding-bottom: 16px;
     }
@@ -349,6 +374,7 @@ textarea:-ms-input-placeholder
 
   @media screen and ($tablet-widths)
   {
+    padding-top: 13px;
     width: 627px;
   }
 
