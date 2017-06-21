@@ -1,0 +1,49 @@
+.closer
+{
+  position: absolute;
+  left: 260px;
+  top: 8px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  //height: 50px;
+  font-size: 0;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+
+  @media screen and ($tablet-widths)
+  {
+    display: none;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    display: none;
+  }
+
+
+  &:before
+  {
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: white;
+  }
+  &:after
+  {
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: white;
+  }
+}

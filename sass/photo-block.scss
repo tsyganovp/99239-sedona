@@ -43,8 +43,8 @@
   {
     width: 100%;
     //padding-bottom: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-left: 20px;
+    //padding-right: 20px;
     vertical-align: middle;
 
     @media screen and ($tablet-widths)
@@ -55,8 +55,8 @@
 
   .photo-information
   {
-    padding-top: 22px;
-    padding-left: 20px;
+    padding-top: 16px;
+    //padding-left: 20px;
     font-family: "PT Sans";
     font-size: 14px;
     line-height: 24px;
@@ -66,14 +66,17 @@
 
     @media screen and ($tablet-widths)
     {
+      padding-left: 20px;
       display: flex;
     }
 
     @media screen and ($desktop-widths)
     {
+      padding-left: 5px;
+      padding-top: 5px;
       display: flex;
       bottom: 0;
-      width: 95.0%;
+      width: 98.8%;
       position: absolute;
       background: rgba(0,0,0,0.3);
       justify-content: space-around;
@@ -93,14 +96,15 @@
     .author__descr
     {
 
-      @media screen and ($desktop-widths)
-      {
-        color: white;
-      }
-
       @media screen and ($tablet-widths)
       {
         width: 181px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-top: 10px;
+        color: white;
       }
     }
   }
@@ -110,12 +114,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 11px;
-    padding-bottom: 21px;
+    margin-top: 8px;
+    padding-bottom: 16px;
+
 
     @media screen and ($tablet-widths)
     {
       margin-left: 36px;
+      margin-top: 18px;
+      padding-bottom: 26px;
     }
 
     @media screen and ($desktop-widths)
@@ -124,10 +131,21 @@
       color: white;
     }
 
-    img
+    svg
     {
       width: 21px;
       padding-right: 14px;
+      fill: #aaaaaa;
+
+      @media screen and ($tablet-widths)
+      {
+        fill: #aaaaaa;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        fill: white;
+      }
     }
 
     p
@@ -169,6 +187,7 @@
 
     @media screen and ($desktop-widths)
     {
+      padding-left: 8px;
       width: 98.4%;
       background: rgba(0,0,0,0.6);
       justify-content: center;
@@ -189,8 +208,8 @@
 
     @media screen and ($desktop-widths)
     {
-      padding-top: 20px;
-      margin-left: 950px;
+      padding-top: 11px;
+      margin-left: 915px;
     }
     p
     {

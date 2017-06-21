@@ -10,7 +10,7 @@
     background: url('../img/bg-back-mobile@1x.jpg');
     //background-size: 100% 100%;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 85px;
     padding-bottom: 85px;
     padding-left: 19px;
     padding-right: 19px;
@@ -88,18 +88,21 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and ("max-width: 320px")
+    &:after
     {
-      &:after
+      content: url(../img/bg-triangle.svg);
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      //bottom: -432px;
+      right: 0px;
+
+      @media screen and ($tablet-widths)
       {
-        content: url(../img/bg-triangle.svg);
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        //bottom: -432px;
-        right: 0px;
+        display: none;
       }
     }
+
 
     @media screen and ($tablet-widths)
     {
@@ -144,8 +147,8 @@
     }
     .intro__text-reason
     {
-      padding-top: 40px;
-      padding-bottom: 55px;
+      padding-top: 24px;
+      padding-bottom: 4px;
       color: #333333;
       font-size: 14px;
       font-weight: 400;

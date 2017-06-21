@@ -1,0 +1,39 @@
+.toogler
+{
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  //height: 50px;
+  font-size: 0;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+
+  @media screen and ($tablet-widths)
+  {
+    display: none;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    display: none;
+  }
+
+
+  &:before
+  {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: #84b5d2;
+    box-shadow: 0 8px 0 0 #84b5d2,
+    0 16px 0 0 #84b5d2;
+  }
+}

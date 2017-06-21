@@ -3,6 +3,7 @@
 }
 .media__inner
 {
+  position: static;
   font-family: "PT Sans";
   text-transform: uppercase;
 
@@ -11,12 +12,13 @@
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: 100% 100%;
     padding-left: 45px;
-    padding-top: 52px;
+    padding-top: 46px;
     padding-right: 46px;
-    padding-bottom: 67px;
+    padding-bottom: 62px;
 
     &:after
     {
+      display: none;
       content: url(../img/bg-intro-triangle-mobile.svg);
       position: absolute;
       text-align: center;
@@ -89,8 +91,8 @@
 
   .media__header
   {
-    padding-top: 44px;
-    padding-bottom: 38px;
+    padding-top: 39px;
+    padding-bottom: 26px;
     text-align: center;
     color: #000000;
     font-size: 18px;
@@ -99,7 +101,7 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-top: 76px;
+      padding-top: 68px;
       padding-bottom: 30px;
       color: #000000;
       font-size: 30px;
@@ -109,7 +111,7 @@
 
     @media screen and ($desktop-widths)
     {
-      padding-top: 113px;
+      padding-top: 107px;
       padding-bottom: 40px;
     }
   }
@@ -118,7 +120,7 @@
   {
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 33px;
+    padding-bottom: 26px;
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
     color: #333333;

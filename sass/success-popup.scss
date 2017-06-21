@@ -1,0 +1,78 @@
+.success-popup
+{
+  text-align: center;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  //padding-left: 56px;
+  padding-top: 46px;
+  //padding-right: 56px;
+  @media screen and ($tablet-widths)
+  {
+    margin: 0 auto;
+    width: 400px;
+    padding-left: 62px;
+    padding-top: 64px;
+    padding-right: 62px;
+  }
+
+  .success-text
+  {
+    padding-left: 56px;
+    padding-right: 56px;
+
+    h1
+    {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-bottom: 40px;
+
+      @media screen and ($tablet-widths)
+      {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px
+      }
+    }
+
+    p
+    {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  }
+  .success-button
+  {
+    background: #f2f2f2;
+    input
+    {
+      width: 80px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: 0;
+      background: #81b3d2;
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+
+      @media screen and ($tablet-widths)
+      {
+        width: 272px;
+        margin-top: 39px;
+        margin-bottom: 49px;
+      }
+    }
+  }
+}
+

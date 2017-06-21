@@ -76,8 +76,8 @@ form
   .form__header
   {
     text-align: center;
-    padding-top: 41px;
-    padding-bottom: 40px;
+    padding-top: 33px;
+    padding-bottom: 26px;
     text-align: center;
     //padding-left: 6.87%;
     //padding-right: 6.87%;
@@ -111,7 +111,7 @@ form
   .form__text
   {
     text-align: center;
-    padding-bottom: 22px;
+    padding-bottom: 17px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -135,7 +135,7 @@ form
   .form__person
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 25px;
+    //padding-bottom: 25px;
 
     @media screen and ($tablet-widths)
     {
@@ -143,17 +143,19 @@ form
       order: 2;
       //width: 383px;
       padding-left: 40px;
+      padding-bottom: 25px;
     }
 
     @media screen and ($desktop-widths)
     {
       width: 40%;
       padding-left: 7%;
+      padding-bottom: 25px;
     }
 
     h3
     {
-      padding-top: 24px;
+      padding-top: 18px;
       padding-bottom: 25px;
       text-align: center;
       color: #000000;
@@ -190,6 +192,7 @@ form
   .form__contacts
   {
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
 
     @media screen and ($tablet-widths)
     {
@@ -212,8 +215,8 @@ form
 
     h3
     {
-      padding-top: 24px;
-      padding-bottom: 29px;
+      padding-top: 20px;
+      padding-bottom: 14px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -257,6 +260,7 @@ form
 
       @media screen and ($desktop-widths)
       {
+        padding-top: 66px;
         font-size: 21px;
         font-weight: 700;
         line-height: 26px;
@@ -307,8 +311,8 @@ form
 
     h3
     {
-      padding-top: 24px;
-      padding-bottom: 27px;
+      padding-top: 27px;
+      padding-bottom: 18px;
       text-align: center;
       color: #000000;
       font-family: "PT Sans";
@@ -351,7 +355,7 @@ form
     {
       margin-left: 20px;
       margin-right: 22px;
-      margin-bottom: 30px;
+      margin-bottom: 19px;
     }
   }
   .form__atraction
@@ -373,7 +377,7 @@ form
 
     h3
     {
-      padding-top: 24px;
+      padding-top: 16px;
       padding-bottom: 21px;
       text-align: center;
       color: #000000;
@@ -452,7 +456,7 @@ form
     .field__checkbox
     {
       margin-left: 24px;
-      margin-top: 64px;
+      margin-top: 15px;
       padding-bottom: 25px;
 
       @media screen and ($tablet-widths)
@@ -561,7 +565,8 @@ form
     @media screen and ($desktop-widths)
     {
       width: 975px;
-      margin-bottom:  55px;
+      margin-bottom: 66px;
+
     }
 
     @media screen and ($tablet-widths)
@@ -584,9 +589,16 @@ form
         line-height: 26px;
         text-transform: uppercase;
 
-        margin-top: 53px;
-    margin-left: 156px;
+        margin-top: 86px;
+        margin-left: 156px;
 
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-top: 0;
+        padding-top: 43px;
+        //padding-left: 149px;
       }
     }
   }

@@ -1,44 +1,24 @@
 .main-nav
 {
-  height: 56px;
-  .main-nav__toogler
+  //height: 56px
+  @media screen and ($tablet-widths)
   {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    display: block;
-    width: 70px;
-    height: 50px;
-    font-size: 0;
-    background-color: white;
-    cursor: pointer;
-    border: none;
+    //display: none;
+  }
 
-    &:before
-    {
-      content: "";
-      position: absolute;
-      top: 17px;
-      left: 20px;
-      width: 23px;
-      height: 4px;
-      background-color: #84b5d2;
-      box-shadow: 0 8px 0 0 #84b5d2,
-      0 16px 0 0 #84b5d2;
-    }
-
-    @media screen and ($tablet-widths)
-    {
-      display: none;
-    }
+  .main-nav__list--closed
+  {
+    //display: none;
   }
   .main-nav__list--opened
   {
+    //display: block;
     position: relative;
     text-decoration: none;
     list-style: none;
     //display:none;
+    padding: 0;
+    margin: 0;
 
     @media screen and ($tablet-widths)
     {
@@ -52,8 +32,11 @@
 
     li
     {
+      cursor: pointer;
       padding-top: 15px;
-      padding-bottom: 20px;
+      padding-bottom: 18px;
+      //padding-top: 15px;
+      //padding-bottom: 20px;
       text-align: center;
       background: #84b5d2;
       color: #ffffff;
@@ -64,6 +47,12 @@
       text-transform: uppercase;
       box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
       background-color: #81b3d2;
+
+      &:hover
+      {
+        background: #68a0c0;
+        color: white;
+      }
 
       @media screen and ($tablet-widths)
       {
@@ -79,6 +68,12 @@
         //margin-right: 77px;
         text-align: center;
 
+        &:hover
+        {
+          background: white;
+          color: #a5c9de;
+        }
+
         &:nth-child(2)
         {
           margin-right: 160px;
@@ -87,6 +82,11 @@
 
       @media screen and ($desktop-widths)
       {
+        &:hover
+        {
+          background: white;
+          color: #a5c9de;
+        }
         &:nth-child(2)
         {
           margin-right: 244px;

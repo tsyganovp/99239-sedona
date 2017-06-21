@@ -1,6 +1,6 @@
 .feature
 {
-  padding-bottom: 39px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
 
@@ -21,8 +21,10 @@
   .feature__img
   {
     padding-right: 7px;
+    margin-left: 21px;
     //width: 40px;
     vertical-align: middle;
+    width: 39px;
 
     @media screen and ($tablet-widths)
     {
@@ -30,10 +32,22 @@
       margin: 0 auto;
     }
 
+    @media screen and ($tablet-widths)
+    {
+      width: 72px;
+      height: 70px;
+    }
+
     img
     {
       vertical-align: middle;
-      width: inherit;
+      width: 38px;
+
+      @media screen and ($tablet-widths)
+      {
+        width: 74px;
+        height: 68px;
+      }
     }
   }
 
@@ -43,16 +57,23 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 
     @media screen and ($tablet-widths)
     {
+      text-align: center;
       padding-left:0;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      text-align: center;
     }
 
     .feature__header
     {
-      padding-bottom: 25px;
+      padding-top: 10px;
+      padding-bottom: 12px;
       color: #000000;
       font-size: 18px;
       font-weight: 700;
@@ -61,6 +82,11 @@
       @media screen and ($tablet-widths)
       {
         padding-top: 26px;
+        padding-bottom: 16px;
+        color: #000000;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
       }
 
       @media screen and ($desktop-widths)
@@ -93,15 +119,6 @@
   {
     order: 1;
   }
-
-  img
-  {
-    @media screen and ($desktop-widths)
-    {
-      height: 75px;
-    }
-  }
-
 }
 
 .feature__gifts
@@ -116,24 +133,9 @@
     order: 3;
   }
 
-  img
-  {
-    @media screen and ($desktop-widths)
-    {
-      height: 75px;
-    }
-  }
-
 }
 .feature__meal
 {
-  @media screen and ($desktop-widths)
-  {
-    order: 2;
-    margin-left: 105px;
-    margin-right: 105px;
-  }
-
   @media screen and ($tablet-widths)
   {
     margin-left: 85px;
@@ -141,12 +143,10 @@
     order: 2;
   }
 
-  img
+  @media screen and ($desktop-widths)
   {
-
-    @media screen and ($desktop-widths)
-    {
-      height: 68px;
-    }
+    order: 2;
+    margin-left: 105px;
+    margin-right: 105px;
   }
 }
