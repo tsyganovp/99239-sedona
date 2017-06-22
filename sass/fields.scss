@@ -41,17 +41,32 @@ textarea:-ms-input-placeholder
 {
   margin-bottom: 20px;
 
+  @media screen and ($desktop-widths)
+  {
+    margin-bottom: 12px;
+  }
+
+  @media screen and ($tablet-widths)
+  {
+    margin-bottom: 9px;
+  }
+
   p
   {
     margin-left: 20px;
     margin-right: 14px;
     //padding-right: 13px;
     color: #333333;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
+
+    @media screen and ($desktop-widths)
+    {
+      margin-left: 0px;
+    }
   }
 
   .field-text__input
@@ -59,12 +74,12 @@ textarea:-ms-input-placeholder
     width: 100%;
     margin-right: 20px;
     padding-left: 22px;
-    padding-top: 22px;
+    padding-top: 13px;
     padding-bottom: 19px;
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -72,18 +87,26 @@ textarea:-ms-input-placeholder
 }
 .field__contacts
 {
-  padding-bottom: 28px;
+  //padding-bottom: 28px;
 
   @media screen and ($desktop-widths)
   {
+    margin-right: 5px;
+    display: -ms-flexbox;
     display: flex;
-    //width: 400px;
+    margin-left: 24px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and ($tablet-widths)
+  {
+    padding-bottom: 21px;
   }
 
   p
   {
     color: #333333;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -100,14 +123,32 @@ textarea:-ms-input-placeholder
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
 
+    &:hover
+    {
+      background: #e6e6e6;
+    }
+
+    &:focus
+    {
+      background: #ffffff;
+      border: 3px solid #e6e6e6;
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
+
+
     @media screen and ($tablet-widths)
     {
-      padding-right: 432px;
+      margin-left: 61px;
+      padding-right: 380px;
+      padding-top: 14px;
+      padding-bottom: 15px;
+
     }
 
     @media screen and ($desktop-widths)
@@ -115,6 +156,8 @@ textarea:-ms-input-placeholder
       //width: 400px;
       margin:0;
       padding-right: 99px;
+      padding-top: 14px;
+      padding-bottom: 15px;
     }
   }
 
@@ -150,7 +193,15 @@ textarea:-ms-input-placeholder
 
     @media screen and ($desktop-widths)
     {
-      left: 500px;
+      left: 461px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
 
@@ -166,7 +217,15 @@ textarea:-ms-input-placeholder
 
     @media screen and ($desktop-widths)
     {
-      right: 30px;
+      right: 119px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media screen and ($tablet-widths)
+    {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
 }
@@ -212,6 +271,13 @@ textarea:-ms-input-placeholder
   height: 56px;
   border-radius: 10%;
   background: #f3f3f3;
+
+
+  &:hover
+  {
+    background: #e6e6e6;
+  }
+
   //box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
 }
 /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
@@ -273,8 +339,9 @@ textarea:-ms-input-placeholder
   position: absolute;
   top: -3px;
   left: 0;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
+
   border: 5px solid #f2f2f2;
   border-radius: 55%;
   background: #f3f3f3;
@@ -299,8 +366,9 @@ textarea:-ms-input-placeholder
 {
   content: '';
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 8px;
+  left: 13px;
+
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -324,18 +392,45 @@ textarea:-ms-input-placeholder
   border: none;
   background: #f2f2f2;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 
   @media screen and ($tablet-widths)
   {
+    padding-top: 13px;
     width: 627px;
   }
 
   @media screen and ($desktop-widths)
   {
-    width: 960px;
+    width: 940px;
+    padding-top: 13px;
   }
+}
+
+.field-text__input
+{
+  &:hover
+    {
+      background: #e6e6e6;
+    }
+
+    &:focus
+    {
+      background: #ffffff;
+      border: 3px solid #e6e6e6;
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
+}
+
+input
+{
+  outline: none;
+}
+textarea
+{
+  outline: none;
 }

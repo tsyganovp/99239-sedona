@@ -1,0 +1,23 @@
+.logo
+{
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  height: 60px;
+
+  @media screen and ($tablet-widths)
+  {
+    z-index: 1;
+    position: absolute;
+    right: 44%;
+    top: 0;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    z-index: 1;
+    position: absolute;
+    right: 43%;
+    top: 0;
+  }
+}

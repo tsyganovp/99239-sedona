@@ -1,5 +1,6 @@
 form
 {
+  outline: 0;
   @media screen and ($tablet-widths)
   {
     margin: 0;
@@ -10,15 +11,19 @@ form
     //width: 648px;
   }
 
+  @media screen and ($tablet-widths)
+  {
+    margin-top: 22px;
+  }
   @media screen and ($desktop-widths)
   {
-    margin-top: 69px;
+    margin-top: 13px;
   }
 
 }
 .form__inner
 {
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
 
   .sedona-introdution
@@ -33,6 +38,8 @@ form
 
     @media screen and ($tablet-widths)
     {
+      background: url('../img/bg-back-tablet@1x.jpg');
+      background-size: 100% 100%;
       padding-top: 95px;
       padding-bottom: 117px;
       padding-left: 156px;
@@ -41,10 +48,24 @@ form
 
     @media screen and ($desktop-widths)
     {
+      background: url('../img/bg-back-desktop@1x.jpg');
+      background-size: 100% 100%;
       padding-top: 102px;
       padding-bottom: 120px;
       padding-left: 370px;
       padding-right: 370px;
+    }
+
+    @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
+    }
+
+    @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
     }
   }
 
@@ -56,8 +77,8 @@ form
   .form__header
   {
     text-align: center;
-    padding-top: 41px;
-    padding-bottom: 40px;
+    padding-top: 33px;
+    padding-bottom: 26px;
     text-align: center;
     //padding-left: 6.87%;
     //padding-right: 6.87%;
@@ -77,6 +98,12 @@ form
 
     @media screen and ($desktop-widths)
     {
+      padding-top:112px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
       margin-left: 381px;
       margin-right: 381px;
     }
@@ -85,7 +112,7 @@ form
   .form__text
   {
     text-align: center;
-    padding-bottom: 22px;
+    padding-bottom: 17px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -109,27 +136,31 @@ form
   .form__person
   {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 25px;
+    //padding-bottom: 25px;
 
     @media screen and ($tablet-widths)
     {
       border: none;
       order: 2;
       //width: 383px;
+      padding-left: 40px;
+      padding-bottom: 25px;
     }
 
     @media screen and ($desktop-widths)
     {
-      padding-left: 59px;
+      width: 40%;
+      padding-left: 7%;
+      padding-bottom: 25px;
     }
 
     h3
     {
-      padding-top: 24px;
+      padding-top: 18px;
       padding-bottom: 25px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -137,12 +168,19 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-bottom: 85px;
+        margin-bottom: 30px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: left;
       }
 
       @media screen and ($desktop-widths)
       {
-        margin-bottom: 60px;
+
+        text-align: left;
+        margin-bottom: 27px;
       }
 
     }
@@ -155,11 +193,12 @@ form
   .form__contacts
   {
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
 
     @media screen and ($tablet-widths)
     {
       position: relative;
-      margin-top: 75px;
+      margin-top: 10px;
       order: 3;
       width: 800px;
       border: none;
@@ -171,16 +210,17 @@ form
       //margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+      margin-top: 0;
     }
 
 
     h3
     {
-      padding-top: 24px;
-      padding-bottom: 29px;
+      padding-top: 20px;
+      padding-bottom: 14px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -189,6 +229,12 @@ form
       @media screen and ($tablet-widths)
       {
         margin: 0 auto;
+        padding-bottom: 19px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+
         &:before
         {
           display: block;
@@ -215,6 +261,11 @@ form
 
       @media screen and ($desktop-widths)
       {
+        padding-top: 66px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
         width: 100%;
         padding-bottom: 77px;
       }
@@ -231,6 +282,11 @@ form
         margin-left: 79px;
         margin-right: 16px;
       }
+
+      @media screen and ($tablet-widths)
+      {
+        margin-left: 80px;
+      }
     }
   }
   .form__impressions
@@ -244,21 +300,23 @@ form
       border-bottom:none;
       border-right: 1px solid #ededed;
       order: 1;
+      padding-right: 49px;
     }
 
     @media screen and ($desktop-widths)
     {
-      padding-right: 127px;
+      width: 40%;
+      padding-left: 6%;
     }
 
 
     h3
     {
-      padding-top: 24px;
-      padding-bottom: 27px;
+      padding-top: 27px;
+      padding-bottom: 18px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -266,12 +324,16 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-bottom: 79px;
+        margin-bottom: 26px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
       }
 
       @media screen and ($desktop-widths)
       {
-        margin-bottom: 60px;
+        margin-bottom:31px;
       }
     }
     p
@@ -283,12 +345,18 @@ form
       font-weight: 700;
       line-height: 26px;
       text-align: right;
+
+      @media screen and ($desktop-widths)
+      {
+        text-align: left;
+        padding-left: 78px;
+      }
     }
     .field__radio
     {
       margin-left: 20px;
       margin-right: 22px;
-      margin-bottom: 30px;
+      margin-bottom: 19px;
     }
   }
   .form__atraction
@@ -308,13 +376,18 @@ form
       border:none;
     }
 
+    @media screen and($desktop-widths)
+    {
+      padding-bottom: 40px;
+    }
+
     h3
     {
-      padding-top: 24px;
+      padding-top: 16px;
       padding-bottom: 21px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -325,14 +398,14 @@ form
         width: 648px;
         margin: 0 auto;
         padding-bottom: 65px;
-        padding-top: 58px;
+        padding-top: 44px;
 
         &:before
         {
           display: block;
           position: absolute;
-          right: -40px;
-          top: 67px;
+          right: 50px;
+          top: 45px;
           content: "";
           width: 200px;
           height: 1px;
@@ -342,18 +415,37 @@ form
         {
           display: block;
           position: absolute;
-          left: -40px;
-          top: 67px;
+          left: 50px;
+          top: 45px;
           content: "";
           width: 200px;
           height: 1px;
           background: #efefef;
+        }
+
+        @media screen and ($tablet-widths)
+        {
+          &:before
+          {
+            top:55px;
+            right: - 30px;
+          }
+          &:after
+          {
+            top:55px;
+            left: - 30px;
+          }
         }
       }
 
       @media screen and ($desktop-widths)
       {
         width: 100%;
+        padding-top: 34px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
       }
 
     }
@@ -361,7 +453,7 @@ form
     {
       color: #000000;
       text-transform: initial;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -370,13 +462,15 @@ form
     .field__checkbox
     {
       margin-left: 24px;
-      margin-top: 64px;
+      margin-top: 15px;
       padding-bottom: 25px;
 
       @media screen and ($tablet-widths)
       {
         width: 320px;
-        margin-bottom: 32px;
+        margin-top: 0;
+        margin-bottom: 61px;
+            margin-right: -83px;
         //margin: 0;
         padding: 0;
       }
@@ -410,7 +504,7 @@ form
       padding-bottom: 21px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -418,7 +512,11 @@ form
 
       @media screen and ($tablet-widths)
       {
-        margin-top: 73px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-top: 31px;
         margin-bottom: 60px;
         padding: 0;
 
@@ -427,7 +525,7 @@ form
           display: block;
           position: absolute;
           right: -40px;
-          top: 83px;
+          top: 41px;
           content: "";
           width: 200px;
           height: 1px;
@@ -438,7 +536,7 @@ form
           display: block;
           position: absolute;
           left: -40px;
-          top: 83px;
+          top: 41px;
           content: "";
           width: 200px;
           height: 1px;
@@ -448,7 +546,11 @@ form
 
       @media screen and ($desktop-widths)
       {
-        margin-top: 169px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-top: 50px;
         margin-bottom: 60px;
       }
     }
@@ -469,21 +571,40 @@ form
     @media screen and ($desktop-widths)
     {
       width: 975px;
+      margin-bottom: 66px;
+
+    }
+
+    @media screen and ($tablet-widths)
+    {
+      margin-top: 0;
+
     }
     .form__attention
     {
       display: none;
       @media screen and ($tablet-widths)
       {
-        margin-left: 162px;
+        margin-left: 148px;
         display: block;
         align-self: center;
         color: #333333;
-        font-family: "PT Sans";
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 26px;
         text-transform: uppercase;
+
+        margin-top: 86px;
+        margin-left: 156px;
+
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        margin-top: 0;
+        padding-top: 43px;
+        //padding-left: 149px;
       }
     }
   }

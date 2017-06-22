@@ -1,125 +1,180 @@
 .video-controls
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -71px;
+  left: 20px;
+
+  @media screen and ($tablet-widths)
+  {
+    bottom: 0;
+    left: 60px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    left: 200px;
+  }
+
+  .video-controls__upper
   {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: -71px;
-    left: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background: rgba(0,0,0,0.6);
 
     @media screen and ($tablet-widths)
     {
-      bottom: 0;
-      left: 60px;
+      height: 0;
     }
 
-    @media screen and ($desktop-widths)
+    input
     {
-      left: 200px;
-    }
-
-    .video-controls__upper
-    {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 45px;
-      background: rgba(0,0,0,0.6);
+      width: 280px;
 
       @media screen and ($tablet-widths)
       {
-        height: 0;
-      }
-      input
-      {
-        width: 280px;
-
-        @media screen and ($tablet-widths)
-        {
-          width: 390px;
-          position: absolute;
-          top: 35px;
-          right: 165px;
-        }
-
-        @media screen and ($desktop-widths)
-        {
-          width: 540px;
-        }
-      }
-    }
-    .video-controls__downer
-    {
-      display: flex;
-      justify-content: flex-start;
-      //width: 280px;
-      padding-left: 25px;
-      padding-top: 22px;
-      padding-bottom: 24px;
-
-      @media screen and ($tablet-widths)
-      {
-        width: 648px;
-        padding: 0;
-        height: 93px;
-        background: rgba(0,0,0,0.6);
+        width: 390px;
+        position: absolute;
+        top: 35px;
+        right: 165px;
       }
 
       @media screen and ($desktop-widths)
       {
-        width: 800px;
+        width: 540px;
+      }
+    }
+  }
+  .video-controls__downer
+  {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+    //width: 280px;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+
+    @media screen and ($tablet-widths)
+    {
+      width: 648px;
+      padding: 0;
+      height: 93px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      width: 800px;
+    }
+
+    .downer__replay
+    {
+      padding-right: 120px;
+
+      @media screen and ($tablet-widths)
+      {
+        padding: 0;
+        padding-top: 36px;
+        padding-left: 27px;
       }
 
-      .downer__replay
+      @media screen and ($desktop-widths)
       {
-        padding-right: 120px;
-
-        @media screen and ($tablet-widths)
-        {
-          padding: 0;
-          padding-top: 35px;
-          padding-left: 35px;
-        }
-        img
-        {
-          width: 32px;
-          height: 20px;
-        }
+        padding: 0;
+        padding-top: 35px;
+        padding-left: 27px;
       }
-      .downer__subtitles
+
+      svg
       {
-        padding-right: 15px;
+        width: 32px;
+        height: 20px;
+        fill: #5c6870;
 
-        @media screen and ($tablet-widths)
+        &:hover
         {
-          padding: 0;
-          padding-top: 35px;
-          padding-left: 473px;
+          fill: #303030;
         }
 
-        @media screen and ($desktop-widths)
+        &:active
         {
-          padding-left: 624px;
+          fill: #c0c0c0;
         }
 
-        img
-        {
-          width: 32px;
-          height: 20px;
-        }
+
       }
-      .downer__fullscreen
+    }
+    .downer__subtitles
+    {
+      padding-right: 15px;
+
+      @media screen and ($tablet-widths)
       {
-        @media screen and ($tablet-widths)
+        padding: 0;
+        padding-top: 37px;
+        padding-left: 465px;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        padding-left: 616px;
+      }
+
+      svg
+      {
+        width: 32px;
+        height: 20px;
+        fill: #5c6870;
+
+        &:hover
         {
-          padding: 0;
-          padding-top: 35px;
-          padding-left: 31px;
+          fill: #303030;
         }
-        img
+
+        &:active
         {
-          width: 32px;
-          height: 20px;
+          fill: #c0c0c0;
         }
       }
     }
   }
+
+  .downer__fullscreen
+  {
+
+    @media screen and ($tablet-widths)
+    {
+      padding: 0;
+      padding-top: 37px;
+      padding-left: 25px;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      padding: 0;
+      padding-top: 35px;
+      padding-left: 25px;
+    }
+
+    svg
+    {
+      width: 32px;
+      height: 20px;
+      fill: #5c6870;
+
+      &:hover
+      {
+        fill: #303030;
+      }
+
+      &:active
+      {
+        fill: #c0c0c0;
+      }
+    }
+  }
+}

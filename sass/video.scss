@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 80px;
@@ -11,12 +11,18 @@
   @media screen and ($tablet-widths)
   {
 
+    margin-bottom: 34px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    margin-bottom: 88px;
   }
 
   .video__header
   {
-    padding-top: 39px;
-    padding-bottom: 37px;
+    padding-top: 35px;
+    padding-bottom: 25px;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
@@ -45,7 +51,7 @@
     //padding-left: 42px;
     //padding-right: 42px;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 34px;
     color: #333333;
     font-size: 14px;
     font-weight: 400;
@@ -55,7 +61,7 @@
     {
       //padding-left: 176px;
       //padding-right: 177px;
-      padding-bottom: 78px;
+      padding-bottom: 88px;
     }
 
     @media screen and ($desktop-widths)
@@ -63,6 +69,7 @@
       //margin-left: 393px;
       //margin-right: 393px;
       padding: 0;
+      padding-bottom: 90px;
     }
   }
 /*Временное для видео*/

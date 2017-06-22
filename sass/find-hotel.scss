@@ -1,31 +1,33 @@
 .hotel
 {
   padding-top: 33px;
-  padding-bottom: 49px;
+  padding-bottom: 44px;
   padding-left: 30px;
   padding-right: 30px;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 
   @media screen and ($tablet-widths)
   {
     padding-left: 155px;
-    padding-top: 57px;
+    padding-top: 54px;
     padding-right: 155px;
     padding-bottom: 58px;
   }
   @media screen and ($desktop-widths)
   {
+    width: 460px;
     padding-top: 57px;
     padding-bottom: 66px;
-    padding-left: 383px;
-    padding-right: 383px;
+    //padding-left: 383px;
+    //padding-right: 383px;
   }
 
   .hotel__header
   {
-    padding-bottom: 40px;
+    padding-bottom: 17px;
     color: #000000;
     font-size: 21px;
     font-weight: 700;
@@ -37,6 +39,11 @@
       font-size: 30px;
       font-weight: 700;
       line-height: 26px;
+    }
+
+    @media screen and ($tablet-widths)
+    {
+      padding-bottom: 29px;
     }
   }
   .hotel__text
@@ -52,11 +59,35 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
+      padding-bottom: 38px;
+
     }
 
     @media screen and ($desktop-widths)
     {
-      padding-bottom: 52px;
+      padding-bottom: 46px;
+    }
+  }
+  .hotel__btn
+  {
+    margin: 0 auto;
+
+    &:hover
+    {
+      color: white;
+      background: #68a0c0;
+    }
+
+    &:active
+    {
+      color: #89b7d0;
+      background: #5698bc;
+    }
+
+    &:disabled
+    {
+      color: white;
+      background: #e6e6e6;
     }
   }
 }

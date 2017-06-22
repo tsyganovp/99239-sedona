@@ -3,7 +3,8 @@
 }
 .media__inner
 {
-  font-family: "PT Sans";
+  position: static;
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
 
   .media__sedona
@@ -11,12 +12,48 @@
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: 100% 100%;
     padding-left: 45px;
-    padding-top: 52px;
+    padding-top: 46px;
     padding-right: 46px;
-    padding-bottom: 67px;
+    padding-bottom: 62px;
+
+    &:after
+    {
+      display: none;
+      content: url(../img/bg-intro-triangle-mobile.svg);
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 148px;
+      right: 0px;
+      z-index: 1;
+
+      @media screen and ($tablet-widths)
+      {
+        content: url(../img/bg-intro-triangle-tablet.svg);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 32px;
+        right: 0px;
+        z-index: 1;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        content: url(../img/bg-intro-triangle-desktop.svg);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 22px;
+        right: 0px;
+        z-index: 1;
+      }
+    }
 
     @media screen and ($tablet-widths)
     {
+      background: url('../img/bg-back-tablet@1x.jpg');
+      background-position: 100% 100%;
       padding-top: 95px;
       padding-bottom: 117px;
       padding-left: 156px;
@@ -25,10 +62,24 @@
 
     @media screen and ($desktop-widths)
     {
+      background: url('../img/bg-back-desktop@1x.jpg');
+      background-position: 100% 100%;
       padding-top: 101px;
       padding-bottom: 120px;
       padding-left: 370px;
       padding-right: 370px;
+    }
+
+    @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
+    }
+
+    @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 100% 100%;
     }
 
     img
@@ -40,8 +91,8 @@
 
   .media__header
   {
-    padding-top: 44px;
-    padding-bottom: 38px;
+    padding-top: 39px;
+    padding-bottom: 26px;
     text-align: center;
     color: #000000;
     font-size: 18px;
@@ -50,8 +101,8 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-top: 76px;
-      padding-bottom: 40px;
+      padding-top: 68px;
+      padding-bottom: 30px;
       color: #000000;
       font-size: 30px;
       font-weight: 700;
@@ -60,7 +111,7 @@
 
     @media screen and ($desktop-widths)
     {
-      padding-top: 113px;
+      padding-top: 107px;
       padding-bottom: 40px;
     }
   }
@@ -69,7 +120,7 @@
   {
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 33px;
+    padding-bottom: 26px;
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
     color: #333333;
@@ -81,7 +132,7 @@
     {
       //padding-left: 170px;
       //padding-right: 170px;
-      padding-bottom: 75px;
+      padding-bottom: 63px;
       color: #333333;
       font-size: 14px;
       font-weight: 400;

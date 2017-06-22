@@ -18,7 +18,7 @@
   padding-left: 20px;
   padding-top: 22px;
   padding-right: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 14px;
   line-height: 24px;
   border-bottom: 1px solid #e5e5e5;
@@ -43,8 +43,9 @@
   {
     width: 100%;
     //padding-bottom: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    vertical-align: middle;
 
     @media screen and ($tablet-widths)
     {
@@ -54,9 +55,9 @@
 
   .photo-information
   {
-    padding-top: 22px;
-    padding-left: 20px;
-    font-family: "PT Sans";
+    padding-top: 16px;
+    //padding-left: 20px;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
@@ -65,15 +66,20 @@
 
     @media screen and ($tablet-widths)
     {
+      padding-left: 20px;
       display: flex;
     }
 
     @media screen and ($desktop-widths)
     {
+      padding-left: 5px;
+      padding-top: 5px;
+      display: flex;
       bottom: 0;
-      width: 95.0%;
+      width: 98.8%;
       position: absolute;
       background: rgba(0,0,0,0.3);
+      justify-content: space-around;
     }
 
     .author__name
@@ -90,8 +96,14 @@
     .author__descr
     {
 
+      @media screen and ($tablet-widths)
+      {
+        width: 181px;
+      }
+
       @media screen and ($desktop-widths)
       {
+        margin-top: 10px;
         color: white;
       }
     }
@@ -102,24 +114,38 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 11px;
-    padding-bottom: 21px;
+    margin-top: 8px;
+    padding-bottom: 16px;
+
 
     @media screen and ($tablet-widths)
     {
-      margin-left: 107px;
+      margin-left: 36px;
+      margin-top: 18px;
+      padding-bottom: 26px;
     }
 
     @media screen and ($desktop-widths)
     {
-      margin-left: 115px;
+      margin-right: 34px;
       color: white;
     }
 
-    img
+    svg
     {
       width: 21px;
       padding-right: 14px;
+      fill: #aaaaaa;
+
+      @media screen and ($tablet-widths)
+      {
+        fill: #aaaaaa;
+      }
+
+      @media screen and ($desktop-widths)
+      {
+        fill: white;
+      }
     }
 
     p
@@ -155,14 +181,16 @@
     @media screen and ($tablet-widths)
     {
       padding-top: 22px;
-      padding-bottom: 21px;
+      padding-bottom: 10px;
       padding-left: 20px;
     }
 
     @media screen and ($desktop-widths)
     {
+      padding-left: 8px;
       width: 98.4%;
       background: rgba(0,0,0,0.6);
+      justify-content: center;
     }
   }
 
@@ -175,12 +203,13 @@
       padding-top: 6px;
       margin: 0;
       //margin-top: 28px;
-      margin-left: 400px;
+      margin-left: 360px;
     }
 
     @media screen and ($desktop-widths)
     {
-      margin-left: 950px;
+      padding-top: 11px;
+      margin-left: 915px;
     }
     p
     {

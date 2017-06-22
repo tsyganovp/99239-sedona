@@ -10,11 +10,11 @@
 
     .hashtag
     {
-      padding-top: 31px;
-      padding-bottom: 41px;
+      padding-top: 63px;
+      padding-bottom: 23px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 21px;
       font-weight: 700;
       line-height: 26px;
@@ -43,7 +43,7 @@
       justify-content: center;
       align-items: flex-start;
       padding: 0;
-      margin-bottom: 51px;
+      margin-bottom: 37px;
 
       @media screen and ($tablet-widths)
       {
@@ -56,13 +56,35 @@
         text-align: center;
         margin-left: 3px;
         margin-right: 3px;
-        img
+
+        &:hover
+        {
+          cursor: pointer;
+          background: #68a0c0;
+        }
+
+        &:active
+        {
+          background: #5698bc;
+        }
+
+        svg
         {
           width: 18px;
           height: 14px;
           vertical-align: middle;
           padding-top: 17px;
           padding-bottom: 17px;
+
+          &:hover
+          {
+
+          }
+
+          &:active
+          {
+            fill: #89b7d0;
+          }
         }
       }
     }
@@ -74,7 +96,7 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-left: 133px;
+      padding-left: 118px;
     }
 
     @media screen and ($desktop-widths)
@@ -88,11 +110,38 @@
       padding-right: 11px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 26px;
       text-transform: uppercase;
+
+      @media screen and ($desktop-widths)
+      {
+        //margin-left: 144px
+      }
+    }
+
+    svg
+    {
+      cursor: pointer;
+      //margin-top: 47px;
+      fill: black;
+
+      @media screen and ($tablet-widths)
+      {
+        margin-top: 47px;
+      }
+
+      &:hover
+      {
+        fill: #84b5d2;
+      }
+
+      &:active
+      {
+        fill: #b2b2b2;
+      }
     }
   }
 }
