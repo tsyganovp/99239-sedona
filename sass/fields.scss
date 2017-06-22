@@ -57,7 +57,7 @@ textarea:-ms-input-placeholder
     margin-right: 14px;
     //padding-right: 13px;
     color: #333333;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -79,7 +79,7 @@ textarea:-ms-input-placeholder
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -106,7 +106,7 @@ textarea:-ms-input-placeholder
   p
   {
     color: #333333;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -123,18 +123,32 @@ textarea:-ms-input-placeholder
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    &:hover
+    {
+      background: #e6e6e6;
+    }
+
+    &:focus
+    {
+      background: #ffffff;
+      border: 3px solid #e6e6e6;
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
 
 
     @media screen and ($tablet-widths)
     {
       margin-left: 61px;
       padding-right: 380px;
-      padding-top: 15px;
+      padding-top: 14px;
       padding-bottom: 15px;
+
     }
 
     @media screen and ($desktop-widths)
@@ -142,7 +156,7 @@ textarea:-ms-input-placeholder
       //width: 400px;
       margin:0;
       padding-right: 99px;
-      padding-top: 15px;
+      padding-top: 14px;
       padding-bottom: 15px;
     }
   }
@@ -378,7 +392,7 @@ textarea:-ms-input-placeholder
   border: none;
   background: #f2f2f2;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -403,8 +417,20 @@ textarea:-ms-input-placeholder
       background: #e6e6e6;
     }
 
-    &:active
+    &:focus
     {
       background: #ffffff;
+      border: 3px solid #e6e6e6;
+      padding-top: 11px;
+      padding-bottom: 12px;
     }
+}
+
+input
+{
+  outline: none;
+}
+textarea
+{
+  outline: none;
 }

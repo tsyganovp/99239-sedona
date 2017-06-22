@@ -1,77 +1,96 @@
 .success-popup
 {
-  text-align: center;
-  font-family: "PT Sans";
-  text-transform: uppercase;
+  margin: 0 auto;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  //padding-left: 56px;
-  padding-top: 46px;
-  //padding-right: 56px;
-  @media screen and ($tablet-widths)
+  width: 320px;
+
+  @media screen and($tablet-widths)
   {
-    margin: 0 auto;
-    width: 400px;
-    padding-left: 62px;
-    padding-top: 64px;
-    padding-right: 62px;
+    width: 640px;
   }
 
   .success-text
   {
-    padding-left: 56px;
-    padding-right: 56px;
+    font-family: "PT Sans","Arial",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 
     h1
     {
+      padding-top: 49px;
       color: #000000;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
-      margin-bottom: 40px;
 
-      @media screen and ($tablet-widths)
+      @media screen and($tablet-widths)
       {
+        padding-top: 64px;
         color: #000000;
         font-size: 30px;
         font-weight: 700;
-        line-height: 40px
+        line-height: 26px;
       }
     }
 
     p
     {
+      margin-left: 53px;
+      margin-right: 53px;
+      margin-top: 40px;
+      margin-bottom: 40px;
       color: #333333;
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      margin-bottom: 40px;
+
+      @media screen and($tablet-widths)
+      {
+        margin-left: 113px;
+        margin-right: 113px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
     }
   }
+
   .success-button
   {
     background: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and($tablet-widths)
+    {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+
     input
     {
-      width: 80px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      width: 280px;
+      margin-left: 20px;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      display: block;
       border: 0;
       background: #81b3d2;
       color: #ffffff;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
 
-      @media screen and ($tablet-widths)
+      @media screen and($tablet-widths)
       {
-        width: 272px;
-        margin-top: 39px;
-        margin-bottom: 49px;
+        width: 460px;
+        margin-left: 91px;
+        margin-right: 91px;
       }
     }
   }
 }
+
+
+

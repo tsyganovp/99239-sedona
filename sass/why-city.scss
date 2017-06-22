@@ -12,7 +12,7 @@
     text-align: center;
     background: #84b5d2;
     color: #ffffff;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
 
     @media screen and ($tablet-widths)
@@ -184,7 +184,7 @@
     padding-left: 41px;
     padding-right: 41px;
     text-align: center;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
 
     @media screen and ($tablet-widths)
@@ -272,6 +272,7 @@
       @media screen and ($tablet-widths)
       {
         padding-bottom: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -285,7 +286,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
 
   @media screen and ($tablet-widths)

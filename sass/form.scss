@@ -1,5 +1,6 @@
 form
 {
+  outline: 0;
   @media screen and ($tablet-widths)
   {
     margin: 0;
@@ -22,7 +23,7 @@ form
 }
 .form__inner
 {
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
 
   .sedona-introdution
@@ -159,7 +160,7 @@ form
       padding-bottom: 25px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -219,7 +220,7 @@ form
       padding-bottom: 14px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -315,7 +316,7 @@ form
       padding-bottom: 18px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -375,13 +376,18 @@ form
       border:none;
     }
 
+    @media screen and($desktop-widths)
+    {
+      padding-bottom: 40px;
+    }
+
     h3
     {
       padding-top: 16px;
       padding-bottom: 21px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -447,7 +453,7 @@ form
     {
       color: #000000;
       text-transform: initial;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -498,7 +504,7 @@ form
       padding-bottom: 21px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans";
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -544,7 +550,7 @@ form
         font-weight: 700;
         line-height: 26px;
         text-transform: uppercase;
-        margin-top: 90px;
+        margin-top: 50px;
         margin-bottom: 60px;
       }
     }
@@ -583,7 +589,7 @@ form
         display: block;
         align-self: center;
         color: #333333;
-        font-family: "PT Sans";
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 26px;
