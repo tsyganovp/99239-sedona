@@ -86,7 +86,7 @@ gulp.task("serve", ["style"], function() {
 });
 
 gulp.task("build", function(fn) {
-  run ("clean",/*"pug"*/,"images","copy","symbols","style",fn);
+  run ("clean",/*"pug",*/"images","copy","symbols","style",fn);
 });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
