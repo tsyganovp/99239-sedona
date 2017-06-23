@@ -42,7 +42,7 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-/*
+
 gulp.task('pug', function buildHTML() {
   gulp.src('source/pug/*.pug')
   .pipe(pug({
@@ -50,7 +50,7 @@ gulp.task('pug', function buildHTML() {
   }))
   .pipe(gulp.dest(""));
 });
-*/
+
 gulp.task("symbols", function() {
   return gulp.src("build/*.svg")
     .pipe(svgmin())
