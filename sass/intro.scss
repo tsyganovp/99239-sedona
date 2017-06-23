@@ -124,7 +124,6 @@
     padding-bottom: 50px;
     padding-right: 357px;
     padding-left: 357px;
-
   }
 
   .intro__downer-sedona
@@ -140,7 +139,9 @@
     }
     @media screen and ($desktop-widths)
     {
-      //padding-top: 51px;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 700;
       padding-bottom: 27px;
     }
   }
@@ -167,3 +168,4 @@
     }
   }
 }
+

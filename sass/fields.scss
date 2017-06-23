@@ -412,6 +412,7 @@ textarea:-ms-input-placeholder
 
 .field-text__input
 {
+  border: 3px solid transparent;
   &:hover
     {
       background: #e6e6e6;
@@ -433,4 +434,5 @@ input
 textarea
 {
   outline: none;
+  resize: none;
 }

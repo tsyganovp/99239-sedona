@@ -4,6 +4,8 @@
   position: relative;
   text-align: center;
   height: 60px;
+  transform: translateY(-100%);
+
 
   @media screen and ($tablet-widths)
   {
