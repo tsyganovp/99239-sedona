@@ -8,9 +8,14 @@
 
   .main-nav__list--closed
   {
-    //display: none;
+    display: none;
   }
   .main-nav__list--opened
+  {
+    display: block;
+  }
+
+  .main-nav__list
   {
     //display: block;
     position: relative;

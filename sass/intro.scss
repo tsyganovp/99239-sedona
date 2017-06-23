@@ -1,171 +1,170 @@
 .intro
 {
-
+  position: relative;
 }
-.intro__inner
+
+.intro__upper
 {
-  .intro__upper
+  position: relative;
+  background: url('../img/bg-back-mobile@1x.jpg');
+  //background-size: 100% 100%;
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  &:after
   {
-    position: relative;
-    background: url('../img/bg-back-mobile@1x.jpg');
-    //background-size: 100% 100%;
-    text-align: center;
-    padding-top: 85px;
-    padding-bottom: 85px;
-    padding-left: 19px;
-    padding-right: 19px;
+    content: url(../img/bg-intro-triangle-mobile.svg);
+    position: absolute;
+    bottom: -6px;
+    right: 0px;
+  }
+
+  @media screen and ($tablet-widths)
+  {
+    background: url('../img/bg-back-tablet@1x.jpg');
+    background-size: 100% 100%;
+    padding-top: 77px;
+    padding-bottom: 91px;
+    padding-left: 154px;
+    padding-right: 154px;
 
     &:after
     {
-      content: url(../img/bg-intro-triangle-mobile.svg);
+      content: url(../img/bg-intro-triangle-tablet.svg);
       position: absolute;
-      bottom: -5px;
+      bottom: -6px;
       right: 0px;
-    }
-
-    @media screen and ($tablet-widths)
-    {
-      background: url('../img/bg-back-tablet@1x.jpg');
-      background-size: 100% 100%;
-      padding-top: 77px;
-      padding-bottom: 91px;
-      padding-left: 154px;
-      padding-right: 154px;
-
-      &:after
-      {
-        content: url(../img/bg-intro-triangle-tablet.svg);
-        position: absolute;
-        bottom: -5px;
-        right: 0px;
-      }
-    }
-
-    @media screen and ($desktop-widths)
-    {
-      background:  url('../img/bg-back-desktop@1x.jpg');
-      background-size: 100% 100%;
-      padding-top: 78px;
-      padding-bottom: 90px;
-      padding-left: 370px;
-      padding-right: 370px;
-
-      &:after
-      {
-        content: url(../img/bg-intro-triangle-desktop.svg);
-        position: absolute;
-        bottom: -5px;
-        right: 0px;
-      }
-    }
-
-    @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
-    {
-      background: url('../img/bg-back-desktop@2x.jpg');
-      background-size: 100% 100%;
-    }
-
-    @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
-    {
-      background: url('../img/bg-back-desktop@2x.jpg');
-      background-size: 100% 100%;
-    }
-
-
-    .intro__sedona
-    {
-      vertical-align: middle;
-      width: 100%;
     }
   }
-  .intro__downer
+
+  @media screen and ($desktop-widths)
   {
-    padding-top: 43px;
-    padding-left: 32px;
-    padding-right: 33px;
-    font-family: "PT Sans","Arial",sans-serif;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
+    background:  url('../img/bg-back-desktop@1x.jpg');
+    background-size: 100% 100%;
+    padding-top: 78px;
+    padding-bottom: 90px;
+    padding-left: 370px;
+    padding-right: 370px;
 
     &:after
     {
-      content: url(../img/bg-triangle.svg);
+      content: url(../img/bg-intro-triangle-desktop.svg);
       position: absolute;
-      width: 100%;
-      z-index: 1;
-      //bottom: -432px;
+      bottom: -6px;
       right: 0px;
-
-      @media screen and ($tablet-widths)
-      {
-        display: none;
-      }
     }
+  }
 
+  @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+  {
+    background: url('../img/bg-back-desktop@2x.jpg');
+    background-size: 100% 100%;
+  }
+
+  @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+  {
+    background: url('../img/bg-back-desktop@2x.jpg');
+    background-size: 100% 100%;
+  }
+
+
+  .intro__sedona
+  {
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+.intro__downer
+{
+  padding-top: 43px;
+  padding-left: 32px;
+  padding-right: 33px;
+  font-family: "PT Sans";
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:after
+  {
+    content: url(../img/bg-triangle.svg);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    //bottom: -432px;
+    right: 0px;
 
     @media screen and ($tablet-widths)
     {
-      //width: 486px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-      padding-top: 51px;
-      //padding-bottom: 55px;
-      padding-right: 141px;
-      padding-left: 141px;
-      text-align: center;
+      display: none;
+    }
+  }
+
+
+  @media screen and ($tablet-widths)
+  {
+    //width: 486px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 51px;
+    //padding-bottom: 55px;
+    padding-right: 141px;
+    padding-left: 141px;
+    text-align: center;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    padding-top: 51px;
+    padding-bottom: 50px;
+    padding-right: 357px;
+    padding-left: 357px;
+  }
+
+  .intro__downer-sedona
+  {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+
+    @media screen and ($tablet-widths)
+    {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    @media screen and ($desktop-widths)
+    {
+      color: #000000;
+      font-size: 21px;
+      font-weight: 700;
+      padding-bottom: 27px;
+    }
+  }
+  .intro__downer-reason
+  {
+    padding-top: 24px;
+    padding-bottom: 4px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+
+    @media screen and ($tablet-widths)
+    {
+      padding-bottom: 49px;
+      padding-top: 29px;
+      font-size: 14px;
+      font-weight: 400;
     }
 
     @media screen and ($desktop-widths)
     {
-      padding-top: 51px;
-      padding-bottom: 50px;
-      padding-right: 357px;
-      padding-left: 357px;
-
-    }
-
-    .intro__text-sedona
-    {
-      color: #000000;
-      font-size: 18px;
-      font-weight: 700;
-
-      @media screen and ($tablet-widths)
-      {
-        font-size: 21px;
-        font-weight: 700;
-      }
-      @media screen and ($desktop-widths)
-      {
-        //padding-top: 51px;
-        padding-bottom: 27px;
-      }
-    }
-    .intro__text-reason
-    {
-      padding-top: 24px;
-      padding-bottom: 4px;
-      color: #333333;
-      font-size: 14px;
-      font-weight: 400;
-
-      @media screen and ($tablet-widths)
-      {
-        padding-bottom: 49px;
-        padding-top: 29px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-
-      @media screen and ($desktop-widths)
-      {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }

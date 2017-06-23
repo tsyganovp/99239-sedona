@@ -15,7 +15,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    h1
+    h2
     {
       padding-top: 49px;
       color: #000000;
@@ -88,6 +88,24 @@
         margin-left: 91px;
         margin-right: 91px;
       }
+
+      &:hover
+    {
+      color: white;
+      background: #68a0c0;
+    }
+
+    &:active
+    {
+      color: #89b7d0;
+      background: #5698bc;
+    }
+
+    &:disabled
+    {
+      color: white;
+      background: #e6e6e6;
+    }
     }
   }
 }

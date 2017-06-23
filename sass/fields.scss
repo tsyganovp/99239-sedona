@@ -181,7 +181,7 @@ textarea:-ms-input-placeholder
     color: black;
   }
 
-  .label__tel
+  .field-text__tel
   {
     //display: none;
     position: absolute;
@@ -205,7 +205,7 @@ textarea:-ms-input-placeholder
     }
   }
 
-  .label__email
+  .field-text__email
   {
     //display: none;
     position: absolute;
@@ -412,6 +412,7 @@ textarea:-ms-input-placeholder
 
 .field-text__input
 {
+  border: 3px solid transparent;
   &:hover
     {
       background: #e6e6e6;
@@ -433,4 +434,5 @@ input
 textarea
 {
   outline: none;
+  resize: none;
 }
