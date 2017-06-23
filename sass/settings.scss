@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('fonts/ptsans.woff'); /* разные файлы */
+}
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('fonts/ptsans.woff2'); /* разные файлы */
+}
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('fonts/ptsansbold.woff'); /* разные файлы */
+}
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('fonts/ptsansbold.woff2'); /* разные файлы */
+}
+
 body
 {
   width: 320px;

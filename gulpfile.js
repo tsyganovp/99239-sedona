@@ -32,17 +32,18 @@ base: "." })
     .pipe(gulp.dest("build"));
 });
 
+
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
 ]))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task('pug', function buildHTML() {
-  gulp.src('source/**/*.pug')
+  gulp.src('source/pug/*.pug')
   .pipe(pug({
     pretty: true
   }))
@@ -50,13 +51,13 @@ gulp.task('pug', function buildHTML() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("img/*.svg")
+  return gulp.src("build/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("symbols.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("style", function() {
@@ -69,7 +70,7 @@ gulp.task("style", function() {
       ]})
     ]))
     .pipe(cssmin())
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -81,11 +82,12 @@ gulp.task("serve", ["style"], function() {
     cors: true,
     ui: false
   });
+});
 
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", "symbols", fn);
-})
+  run ("clean","pug","images","copy","symbols","style",fn);
+});
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
-});
+

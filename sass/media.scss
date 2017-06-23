@@ -9,6 +9,7 @@
 
   .media__sedona
   {
+    position: relative;
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: 100% 100%;
     padding-left: 45px;
@@ -18,12 +19,12 @@
 
     &:after
     {
-      display: none;
+      //display: none;
       content: url(../img/bg-intro-triangle-mobile.svg);
       position: absolute;
       text-align: center;
       width: 100%;
-      bottom: 148px;
+      bottom: -6px;
       right: 0px;
       z-index: 1;
 
@@ -33,7 +34,7 @@
         position: absolute;
         text-align: center;
         width: 100%;
-        bottom: 32px;
+        bottom: -6px;
         right: 0px;
         z-index: 1;
       }
@@ -44,7 +45,7 @@
         position: absolute;
         text-align: center;
         width: 100%;
-        bottom: 22px;
+        bottom: -6px;
         right: 0px;
         z-index: 1;
       }
