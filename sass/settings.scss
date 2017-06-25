@@ -1,19 +1,38 @@
 @font-face {
   font-family: 'PT Sans';       /* название одно */
   src: url('../fonts/ptsans.woff'); /* разные файлы */
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('../fonts/ptsans.woff'); /* разные файлы */
+  font-weight: bold;
+}
+
 @font-face {
   font-family: 'PT Sans';       /* название одно */
   src: url('../fonts/ptsans.woff2'); /* разные файлы */
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'PT Sans';       /* название одно */
+  src: url('../fonts/ptsans.woff2'); /* разные файлы */
+  font-weight: bold;
+}
+
 @font-face {
   font-family: 'PT Sans';       /* название одно */
   src: url('../fonts/ptsansbold.woff'); /* разные файлы */
+  font-weight: bold;
 }
 @font-face {
   font-family: 'PT Sans';       /* название одно */
   src: url('../fonts/ptsansbold.woff2'); /* разные файлы */
+  font-weight: bold;
 }
+
 
 body
 {
@@ -37,3 +56,8 @@ h1,h2,h3,p,li
   padding: 0;
 }
 //настройки
+
+p
+{
+  font-weight: normal;
+}

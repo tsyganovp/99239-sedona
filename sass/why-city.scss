@@ -12,7 +12,7 @@
     text-align: center;
     background: #84b5d2;
     color: #ffffff;
-    font-family: "PT Sans","Arial",sans-serif;
+    font-family: 'PT Sans','Arial',sans-serif;
     text-transform: uppercase;
 
     @media screen and ($tablet-widths)
@@ -184,7 +184,7 @@
     padding-left: 41px;
     padding-right: 41px;
     text-align: center;
-    font-family: "PT Sans","Arial",sans-serif;
+    font-family: 'PT Sans','Arial',sans-serif;
     text-transform: uppercase;
 
     @media screen and ($tablet-widths)
@@ -278,7 +278,7 @@
   }
 }
 
-.why-city__features
+.features
 {
   margin-top: 25px;
   margin-bottom: 40px;
@@ -286,7 +286,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial',sans-serif;
   text-transform: uppercase;
 
   @media screen and ($tablet-widths)
@@ -306,7 +306,7 @@
   }
 }
 
-.city-promo__text2
+.city-promo__text--second
 {
 
   @media screen and ($tablet-widths)
@@ -320,7 +320,7 @@
   }
 
 }
-.city-promo__image2
+.city-promo__image--second
 {
 
   @media screen and ($tablet-widths)
