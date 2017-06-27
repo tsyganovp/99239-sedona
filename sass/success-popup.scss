@@ -1,5 +1,6 @@
 .success-popup
 {
+  display: none;
   margin: 0 auto;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   width: 320px;
@@ -11,7 +12,7 @@
 
   .success-text
   {
-    font-family: "PT Sans","Arial",sans-serif;
+    font-family: 'PT Sans','Arial',sans-serif;
     text-transform: uppercase;
     text-align: center;
 
@@ -76,7 +77,7 @@
       border: 0;
       background: #81b3d2;
       color: #ffffff;
-      font-family: "PT Sans","Arial",sans-serif;
+      font-family: 'PT Sans','Arial',sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;

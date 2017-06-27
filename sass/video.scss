@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial',sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 80px;
@@ -31,16 +31,17 @@
 
     @media screen and ($tablet-widths)
     {
-      padding-top: 68px;
-      padding-bottom: 40px;
+      padding-top: 64px;
+      padding-bottom: 30px;
       color: #000000;
       font-size: 30px;
       font-weight: 700;
       line-height: 26px;
     }
 
-    @media screen and ($tablet-widths)
+    @media screen and ($desktop-widths)
     {
+      padding-bottom: 33px;
       //margin-left: 393px;
       //margin-right: 393px;
     }
@@ -59,9 +60,9 @@
 
     @media screen and ($tablet-widths)
     {
-      //padding-left: 176px;
-      //padding-right: 177px;
-      padding-bottom: 88px;
+      padding-left: 170px;
+      padding-right: 170px;
+      padding-bottom: 73px;
     }
 
     @media screen and ($desktop-widths)
@@ -69,7 +70,9 @@
       //margin-left: 393px;
       //margin-right: 393px;
       padding: 0;
-      padding-bottom: 90px;
+      padding-left: 360px;
+      padding-right: 360px;
+      padding-bottom: 71px;
     }
   }
 /*Временное для видео*/

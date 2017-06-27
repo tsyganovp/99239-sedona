@@ -2,6 +2,7 @@
 {
   .page-footer__inner
   {
+    padding-bottom: 20px;
     @media screen and ($tablet-widths)
     {
       display: flex;
@@ -10,11 +11,11 @@
 
     .hashtag
     {
-      padding-top: 63px;
+      padding-top: 35px;
       padding-bottom: 23px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans","Arial",sans-serif;
+      font-family: 'PT Sans','Arial',sans-serif;
       font-size: 21px;
       font-weight: 700;
       line-height: 26px;
@@ -30,9 +31,9 @@
 
       @media screen and ($desktop-widths)
       {
-        padding-top: 51px;
+        padding-top: 46px;
         padding-bottom: 53px;
-        padding-left: 132px;
+        padding-left: 139px;
         padding-right: 256px;
       }
     }
@@ -110,7 +111,7 @@
       padding-right: 11px;
       text-align: center;
       color: #000000;
-      font-family: "PT Sans","Arial",sans-serif;
+      font-family: 'PT Sans','Arial',sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 26px;

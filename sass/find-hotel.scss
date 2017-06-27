@@ -2,24 +2,27 @@
 {
   padding-top: 33px;
   padding-bottom: 44px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-family: "PT Sans","Arial",sans-serif;
+  //padding-left: 30px;
+  //padding-right: 30px;
+  font-family: 'PT Sans','Arial',sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
 
   @media screen and ($tablet-widths)
   {
-    padding-left: 155px;
-    padding-top: 54px;
-    padding-right: 155px;
-    padding-bottom: 58px;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 56px;
+    //padding-left: 155px;
+    //padding-top: 54px;
+    //padding-right: 155px;
+    //padding-bottom: 58px;
   }
   @media screen and ($desktop-widths)
   {
     width: 460px;
-    padding-top: 57px;
+    padding-top: 49px;
     padding-bottom: 66px;
     //padding-left: 383px;
     //padding-right: 383px;
@@ -43,6 +46,7 @@
 
     @media screen and ($tablet-widths)
     {
+      text-align: center;
       padding-bottom: 29px;
     }
   }
@@ -52,6 +56,8 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
 
     @media screen and ($tablet-widths)
     {
@@ -59,19 +65,21 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      padding-bottom: 38px;
+      padding-bottom: 42px;
+      padding-left: 100px;
+      padding-right: 100px;
 
     }
 
     @media screen and ($desktop-widths)
     {
+      padding-left: 0;
+      padding-right: 0;
       padding-bottom: 46px;
     }
   }
   .hotel__btn
   {
-    margin: 0 auto;
-
     &:hover
     {
       color: white;
