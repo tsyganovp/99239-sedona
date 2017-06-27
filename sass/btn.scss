@@ -1,5 +1,7 @@
 .btn
 {
+  display: block;
+  margin-top: 35px;
   color: #ffffff;
   font-family: "PT Sans";
   font-size: 21px;
@@ -16,13 +18,13 @@
 
   @media screen and($tablet-widths)
   {
-    width: 325px;
-    margin-left: 60px;
+    margin: 0 auto;
+    width: 454px;
   }
 
   @media screen and ($desktop-widths)
   {
-    width: 480px;
+    width: 425px;
     padding: 17px;
     margin-left: 0px;
   }
