@@ -73,6 +73,7 @@ textarea:-ms-input-placeholder
   {
     width: 100%;
     margin-right: 20px;
+    //padding-right: 184px;
     padding-left: 22px;
     padding-top: 13px;
     padding-bottom: 19px;
@@ -83,6 +84,27 @@ textarea:-ms-input-placeholder
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+
+    @media screen and($tablet-widths)
+    {
+      margin-right: 0;
+    }
+    @media screen and($desktop-widths)
+    {
+      width: 100%;
+      margin-right: 20px;
+      padding-right: 184px;
+      padding-left: 22px;
+      padding-top: 13px;
+      padding-bottom: 19px;
+      background: #f3f3f3;
+      border:none;
+      color: #000000;
+      font-family: 'PT Sans','Arial',sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
 }
 .field__contacts
@@ -94,13 +116,15 @@ textarea:-ms-input-placeholder
     margin-right: 5px;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 24px;
+    margin-left: 45px;
+    //margin-left: 123px;
     padding-bottom: 28px;
   }
 
   @media screen and ($tablet-widths)
   {
     padding-bottom: 21px;
+    //margin-left: 46px;
   }
 
   p
@@ -228,6 +252,16 @@ textarea:-ms-input-placeholder
       padding-bottom: 16px;
     }
   }
+}
+
+.field__contacts--second
+{
+  margin-left: 0px;
+  @media screen and($tablet-widths)
+  {
+    margin-left: 0px;
+  }
+
 }
 /* Cначала обозначаем стили для IE8 и более старых версий
 т.е. здесь мы немного облагораживаем стандартный чекбокс. */
@@ -385,10 +419,10 @@ textarea:-ms-input-placeholder
 
 .field-textarea
 {
-  padding-top: 22px;
+  padding-top: 15px;
   padding-left: 21px;
   padding-bottom: 95px;
-  width: 280px;
+  width: 255px;
   border: none;
   background: #f2f2f2;
   color: #000000;

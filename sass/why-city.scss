@@ -75,6 +75,8 @@
 
       .city-promo__number
       {
+        display: flex;
+        justify-content: center;
         //padding-right: 27px;
         padding-top: 8px;
         //padding-right: 28px;
@@ -83,8 +85,34 @@
         font-weight: 400;
         line-height: 21px;
 
+
+        &:before
+        {
+          content: "";
+          display: block;
+          //position: absolute;
+          align-self: center;
+          margin-right: 5px;
+          height: 1px;
+          width: 10px;
+          background: white;
+        }
+        &:after
+        {
+          content: "";
+          display: block;
+          //position: absolute;
+          align-self: center;
+          margin-left: 5px;
+          height: 1px;
+          width: 10px;
+          background: white;
+        }
+
         @media screen and ($tablet-widths)
         {
+          display: flex;
+          justify-content: center;
           padding-top: 10px;
           padding-left: 0;
           padding-right: 0;
@@ -92,7 +120,9 @@
 
         @media screen and ($desktop-widths)
         {
-          padding-top: 4px;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 21px;
         }
       }
 
@@ -161,7 +191,7 @@
     }
   }
 
-  .city-promo2
+  .city-promo--second
   {
     padding-top: 37px;
 
@@ -181,6 +211,7 @@
     background: #efefef;
     //padding-top: 26px;
     //padding-bottom: 25px;
+    padding-top: 0;
     padding-left: 41px;
     padding-right: 41px;
     text-align: center;
@@ -198,7 +229,11 @@
 
   .city-promo__gray
   {
-
+    border-bottom: 1px solid #d7d7d7;
+    &:last-of-type
+    {
+      border: 0;
+    }
     @media screen and ($tablet-widths)
     {
       //text-align: center;
@@ -206,7 +241,7 @@
       padding-left: 56px;
       padding-top: 45px;
       padding-right: 48px;
-      padding-bottom: 49px;
+      padding-bottom: 39px;
     }
 
     @media screen and ($desktop-widths)
@@ -233,10 +268,18 @@
         font-weight: 700;
         line-height: 26px;
       }
+
+      @media screen and($desktop-widths)
+      {
+        padding-left: 70px;
+        padding-right: 70px;
+      }
     }
 
     .gray__number
     {
+      display: flex;
+      justify-content: center;
       padding-top: 10px;
       padding-bottom: 14px;
       color: #333333;
@@ -244,16 +287,44 @@
       font-weight: 400;
       line-height: 21px;
 
+      &:before
+      {
+        content: "";
+        display: block;
+        //position: absolute;
+        align-self: center;
+        margin-right: 5px;
+        height: 1px;
+        width: 10px;
+        background: #959595;
+      }
+      &:after
+      {
+        content: "";
+        display: block;
+        //position: absolute;
+        align-self: center;
+        margin-left: 5px;
+        height: 1px;
+        width: 10px;
+        background: #959595;
+      }
+
       @media screen and ($tablet-widths)
       {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 22px;
         color: #333333;
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
       }
 
-      @media screen and ($tablet-widths)
+      @media screen and ($desktop-widths)
       {
+        display: flex;
+        justify-content: center;
         padding-top: 8px;
         padding-bottom: 23px;
       }
@@ -262,7 +333,6 @@
     .gray__descr
     {
       padding-bottom: 27px;
-      border-bottom: 1px solid #d7d7d7;
       //padding-bottom: 32px;
       color: #333333;
       font-size: 14px;

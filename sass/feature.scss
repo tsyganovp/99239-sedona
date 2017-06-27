@@ -1,21 +1,29 @@
-.feature
+.features
 {
   padding-bottom: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding-right: 20px;
+  margin-bottom: 22px;
 
   @media screen and ($tablet-widths)
   {
-    width: 170px;
+    margin-bottom: 48px;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
     padding-bottom: 0;
+    padding-right: 0;
     text-align: center;
   }
 
   @media screen and ($desktop-widths)
   {
-    width: 300px;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 43px;
+    padding-right: 0;
   }
 }
 .features__img
@@ -67,7 +75,11 @@
 
   @media screen and ($desktop-widths)
   {
+    padding: 51px;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: center;
+    //margin-top: 28px;
   }
 
   .features__header
@@ -91,7 +103,8 @@
 
     @media screen and ($desktop-widths)
     {
-      padding-top: 24px;
+      padding-top: 30px;
+      padding-bottom: 22px;
       font-size: 21px;
       font-weight: 700;
     }
@@ -103,49 +116,81 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+    padding-left: 0;
+    padding-right: 0;
 
     @media screen and ($tablet-widths)
     {
+      padding-left: 25px;
+      padding-right: 25px;
       font-size: 14px;
       font-weight: 400;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
     }
   }
 }
 
 .features__home
 {
+  display: flex;
+  margin-bottom: 18px;
+
+  @media screen and ($tablet-widths)
+  {
+    display: block;
+  }
+
   @media screen and ($desktop-widths)
   {
+    display: block;
+    width: 33.3%;
     order: 1;
   }
 }
 
 .features__gifts
 {
+  display: flex;
+  margin-bottom: 18px;
+
   @media screen and ($desktop-widths)
   {
+    display: block;
+    width: 33.3%;
     order: 3;
   }
 
   @media screen and ($tablet-widths)
   {
+    display: block;
     order: 3;
   }
 }
 
 .features__meal
 {
+  display: flex;
   @media screen and ($tablet-widths)
   {
-    margin-left: 85px;
-    margin-right: 85px;
+    display: block;
+    //margin-left: 85px;
+    //margin-right: 85px;
     order: 2;
   }
 
   @media screen and ($desktop-widths)
   {
+    display: block;
+    width: 33.3%;
     order: 2;
-    margin-left: 105px;
-    margin-right: 105px;
+    //margin-left: 105px;
+    //margin-right: 105px;
   }
 }

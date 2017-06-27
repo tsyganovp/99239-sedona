@@ -1,21 +1,31 @@
 .btn
 {
-  border: none;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding-top: 17px;
-  padding-bottom: 19px;
-  display: block;
-  width: 280px;
-  background: #84b5d2;
   color: #ffffff;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  text-decoration: none;
+  background: #84b5d2;
+  border: 0;
 
+  width: 280px;
+  margin-left: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media screen and($tablet-widths)
+  {
+    width: 325px;
+    margin-left: 60px;
+  }
+
+  @media screen and ($desktop-widths)
+  {
+    width: 480px;
+    padding: 17px;
+    margin-left: 0px;
+  }
   &:hover
   {
     color: #68a0c0;
@@ -30,31 +40,6 @@
   {
     color: #e6e6e6;
   }
-
-  @media screen and ($tablet-widths)
-  {
-    margin: 0;
-    margin-top: 82px;
-    //margin-top: 49px;
-    padding-bottom: 17px;
-    width: 325px;
-  }
-
-  @media screen and ($desktop-widths)
-  {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-top: 38px;
-    margin-left: 10px;
-    margin-right: 170px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-  }
-
-  @media screen and ($desktop-widths)
-  {
-    //margin: 0 auto;
-  }
 }
+
+
