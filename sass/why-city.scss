@@ -29,6 +29,8 @@
 
     .city-promo__text
     {
+      width: 400px;
+
       @media screen and ($tablet-widths)
       {
         display: flex;

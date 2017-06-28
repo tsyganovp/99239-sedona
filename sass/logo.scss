@@ -39,11 +39,11 @@
     //transform: translateY(-100%);
     @media screen and ($tablet-widths)
     {
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateX(-50%);
     }
     @media screen and ($desktop-widths)
     {
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateX(-50%);
     }
   }
 }
