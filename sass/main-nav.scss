@@ -34,7 +34,6 @@
       //margin-left: 49px;
       //background: white;
     }
-
     li
     {
       cursor: pointer;
@@ -55,7 +54,7 @@
 
       &:last-of-type
       {
-         box-shadow: 2px 0px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        box-shadow: 2px 0px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
       }
 
       &:hover
