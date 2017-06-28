@@ -275,7 +275,7 @@
           flex-direction: row;
           justify-content: center;
           margin: 0 auto;
-          padding-top: 39px;
+          padding-top: 33px;
           padding-bottom: 19px;
           font-size: 21px;
           font-weight: 700;
@@ -430,10 +430,12 @@
         font-weight: 700;
         line-height: 26px;
         text-align: right;
+        padding-top: 10px;
 
         @media screen and ($desktop-widths)
         {
           text-align: left;
+          padding-top: 10px;
           padding-left: 78px;
         }
       }
@@ -441,15 +443,20 @@
       {
         margin-left: 25px;
         margin-right: 31px;
-        margin-bottom: 22px;
-
+        margin-bottom: 38px;
+        &:last-of-type
+        {
+          margin-bottom: 17px;
+        }
         @media screen and($tablet-widths)
         {
+          margin-bottom: 44px;
           margin-right: 65px;
           margin-left: 0;
         }
         @media screen and ($desktop-widths)
         {
+          margin-bottom: 50px;
           margin-left: 20px;
         }
       }
@@ -695,7 +702,7 @@
 
       @media screen and($tablet-widths)
       {
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 57px;
         width: 960px;
         display: flex;
@@ -718,7 +725,8 @@
         {
           display: flex;
           flex-wrap: wrap;
-          margin-left: 141px;
+          margin-top: 39px;
+          margin-left: 162px;
           align-self: center;
           color: #333333;
           font-family: "PT Sans";

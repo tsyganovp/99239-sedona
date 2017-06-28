@@ -236,6 +236,7 @@
     }
     @media screen and ($tablet-widths)
     {
+      border: 0;
       //text-align: center;
       //width: 256px;
       padding-left: 56px;
@@ -246,6 +247,7 @@
 
     @media screen and ($desktop-widths)
     {
+      border: 0;
       padding-left: 63px;
       padding-top: 46px;
       padding-right: 48px;

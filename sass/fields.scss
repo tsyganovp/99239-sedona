@@ -365,7 +365,7 @@ textarea:-ms-input-placeholder
 .radio:not(checked) + label
 {
   position: relative;
-  padding: 0 0 0 35px;
+  //padding: 0 0 0 35px;
 }
 .radio:not(checked) + label:before
 {
