@@ -18,12 +18,12 @@
   .form__inner
   {
     width: 100%;
-    font-family: 'PT Sans','Arial',sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
 
     .sedona-introdution
     {
-      background: url('../img/bg-back-mobile@1x.jpg');
+      background: url("../img/bg-back-mobile@1x.jpg");
       background-size: 100% 100%;
       text-align: center;
       padding-left: 45px;
@@ -41,7 +41,7 @@
 
       @media screen and ($tablet-widths)
       {
-        background: url('../img/bg-back-tablet@1x.jpg');
+        background: url("../img/bg-back-tablet@1x.jpg");
         background-size: 100% 100%;
         padding-top: 95px;
         padding-bottom: 117px;
@@ -59,7 +59,7 @@
 
       @media screen and ($desktop-widths)
       {
-        background: url('../img/bg-back-desktop@1x.jpg');
+        background: url("../img/bg-back-desktop@1x.jpg");
         background-size: 100% 100%;
         padding-top: 102px;
         padding-bottom: 120px;
@@ -78,13 +78,13 @@
 
       @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
       {
-        background: url('../img/bg-back-desktop@2x.jpg');
+        background: url("../img/bg-back-desktop@2x.jpg");
         background-size: 100% 100%;
       }
 
       @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
       {
-        background: url('../img/bg-back-desktop@2x.jpg');
+        background: url("../img/bg-back-desktop@2x.jpg");
         background-size: 100% 100%;
       }
     }
@@ -185,7 +185,7 @@
         padding-bottom: 25px;
         text-align: center;
         color: #000000;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -263,7 +263,7 @@
         padding-bottom: 14px;
         text-align: center;
         color: #000000;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -286,7 +286,7 @@
           {
             margin-right: 60px;
             align-self: center;
-            content: '';
+            content: "";
             display: flex;
             width: 140px;
             height: 2px;
@@ -297,7 +297,7 @@
           {
             margin-left: 60px;
             align-self: center;
-            content: '';
+            content: "";
             display: flex;
             width: 140px;
             height: 2px;
@@ -323,7 +323,7 @@
           {
             margin-right: 60px;
             align-self: center;
-            content: '';
+            content: "";
             display: flex;
             width: 280px;
             height: 2px;
@@ -334,7 +334,7 @@
           {
             margin-left: 60px;
             align-self: center;
-            content: '';
+            content: "";
             display: flex;
             width: 280px;
             height: 2px;
@@ -396,7 +396,7 @@
         //padding-bottom: 67px;
         text-align: center;
         color: #000000;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -425,7 +425,7 @@
       {
         color: #000000;
         text-transform: initial;
-        font-family: 'PT Sans';
+        font-family: "PT Sans";
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -490,7 +490,7 @@
         padding-bottom: 21px;
         text-align: center;
         color: #000000;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -508,7 +508,7 @@
 
           &:before
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 200px;
             background: #dcdcdc;
@@ -516,7 +516,7 @@
           }
           &:after
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 200px;
             background: #dcdcdc;
@@ -540,7 +540,7 @@
 
           &:before
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 340px;
             background: #dcdcdc;
@@ -548,7 +548,7 @@
           }
           &:after
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 340px;
             background: #dcdcdc;
@@ -561,7 +561,7 @@
       {
         color: #000000;
         text-transform: initial;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -647,7 +647,7 @@
         padding-bottom: 21px;
         text-align: center;
         color: #000000;
-        font-family: 'PT Sans','Arial',sans-serif;
+        font-family: "PT Sans","Arial",sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
@@ -677,7 +677,7 @@
 
           &:before
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 280px;
             margin-right: 77px;
@@ -686,7 +686,7 @@
           }
           &:after
           {
-            content: '';
+            content: "";
             height: 2px;
             width: 280px;
             margin-left: 77px;

@@ -57,7 +57,7 @@ textarea:-ms-input-placeholder
     margin-right: 14px;
     //padding-right: 13px;
     color: #333333;
-    font-family: 'PT Sans','Arial',sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -80,7 +80,7 @@ textarea:-ms-input-placeholder
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: 'PT Sans','Arial',sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -100,7 +100,7 @@ textarea:-ms-input-placeholder
       background: #f3f3f3;
       border:none;
       color: #000000;
-      font-family: 'PT Sans','Arial',sans-serif;
+      font-family: "PT Sans","Arial",sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -130,7 +130,7 @@ textarea:-ms-input-placeholder
   p
   {
     color: #333333;
-    font-family: 'PT Sans','Arial',sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -147,7 +147,7 @@ textarea:-ms-input-placeholder
     background: #f3f3f3;
     border:none;
     color: #000000;
-    font-family: 'PT Sans','Arial',sans-serif;
+    font-family: "PT Sans","Arial",sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -297,7 +297,7 @@ textarea:-ms-input-placeholder
 /* Оформление первой части чекбокса в выключенном состоянии (фон). */
 .input-checkbox:not(checked) + label:before
 {
-  content:'';
+  content:"";
   position: absolute;
   top: -4px;
   left: 0;
@@ -317,7 +317,7 @@ textarea:-ms-input-placeholder
 /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
 .input-checkbox:not(checked) + label:after
 {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 20px;
@@ -336,7 +336,7 @@ textarea:-ms-input-placeholder
 /* Сдвигаем переключатель чекбокса, когда он включен. */
 .input-checkbox:checked + label:after
 {
-  content:  url('../img/icon-tick.svg');
+  content:  url("../img/icon-tick.svg");
   //left: 26px;
 }
 /* Показываем получение фокуса. */
@@ -369,7 +369,7 @@ textarea:-ms-input-placeholder
 }
 .radio:not(checked) + label:before
 {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
@@ -382,7 +382,7 @@ textarea:-ms-input-placeholder
 }
 .radio:not(checked) + label:after
 {
-  content: '';
+  content: "";
   position: absolute;
   /*
   top: 1px;
@@ -398,7 +398,7 @@ textarea:-ms-input-placeholder
 }
 .radio:checked + label:after
 {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: 13px;
@@ -426,7 +426,7 @@ textarea:-ms-input-placeholder
   border: none;
   background: #f2f2f2;
   color: #000000;
-  font-family: 'PT Sans','Arial',sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

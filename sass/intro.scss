@@ -6,7 +6,7 @@
 .intro__upper
 {
   position: relative;
-  background: url('../img/bg-back-mobile@1x.jpg');
+  background: url("../img/bg-back-mobile@1x.jpg");
   //background-size: 100% 100%;
   text-align: center;
   padding-top: 85px;
@@ -24,7 +24,7 @@
 
   @media screen and ($tablet-widths)
   {
-    background: url('../img/bg-back-tablet@1x.jpg');
+    background: url("../img/bg-back-tablet@1x.jpg");
     background-size: 100% 100%;
     padding-top: 77px;
     padding-bottom: 91px;
@@ -42,7 +42,7 @@
 
   @media screen and ($desktop-widths)
   {
-    background:  url('../img/bg-back-desktop@1x.jpg');
+    background:  url("../img/bg-back-desktop@1x.jpg");
     background-size: 100% 100%;
     padding-top: 78px;
     padding-bottom: 90px;
@@ -60,13 +60,13 @@
 
   @media screen and ($desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
   {
-    background: url('../img/bg-back-desktop@2x.jpg');
+    background: url("../img/bg-back-desktop@2x.jpg");
     background-size: 100% 100%;
   }
 
   @media screen and ($tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx)
   {
-    background: url('../img/bg-back-desktop@2x.jpg');
+    background: url("../img/bg-back-desktop@2x.jpg");
     background-size: 100% 100%;
   }
 
@@ -82,7 +82,7 @@
   padding-top: 43px;
   padding-left: 32px;
   padding-right: 33px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
